@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.64b24a9c.chunk.css",
+    "main.js": "/personal-website/static/js/main.9da21130.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.9da21130.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.3bf14499.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.3bf14499.js.map",
+    "static/js/2.881cb83a.chunk.js": "/personal-website/static/js/2.881cb83a.chunk.js",
+    "static/js/2.881cb83a.chunk.js.map": "/personal-website/static/js/2.881cb83a.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "static/css/main.64b24a9c.chunk.css.map": "/personal-website/static/css/main.64b24a9c.chunk.css.map",
+    "static/js/2.881cb83a.chunk.js.LICENSE.txt": "/personal-website/static/js/2.881cb83a.chunk.js.LICENSE.txt",
+    "static/media/artist.55a804b0.svg": "/personal-website/static/media/artist.55a804b0.svg",
+    "static/media/beer_celebration.533bf14a.svg": "/personal-website/static/media/beer_celebration.533bf14a.svg",
+    "static/media/mic_drop.ca7310be.svg": "/personal-website/static/media/mic_drop.ca7310be.svg",
+    "static/media/video.d48e2181.mp4": "/personal-website/static/media/video.d48e2181.mp4"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3bf14499.js",
+    "static/js/2.881cb83a.chunk.js",
+    "static/css/main.64b24a9c.chunk.css",
+    "static/js/main.9da21130.chunk.js"
+  ]
+}
