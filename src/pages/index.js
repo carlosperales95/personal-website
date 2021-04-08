@@ -9,6 +9,8 @@ import {
     homeObjThree, 
     homeObjTwo 
 } from '../components/ImagedSection/Data';
+import Projects from '../components/Projects';
+import Footer from '../components/Footer';
 
 
 const Home = () => {
@@ -25,9 +27,10 @@ const Home = () => {
             <HeroSection />
             <ImagedSection {...homeObjOne}/>
             <ImagedSection {...homeObjTwo}/>
+            <Projects/>
             <ImagedSection {...homeObjThree}/>
             <ImagedSection {...homeObjFour}/>
-
+            <Footer/>
         </>
     )
 }

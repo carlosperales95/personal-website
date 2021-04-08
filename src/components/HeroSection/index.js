@@ -27,7 +27,7 @@ const HeroSection = () => {
             <HeroContent>
                 <HeroTitle> Hi, I'm Carlos Perales </HeroTitle>
                 <HeroDescription>
-                    I'm a recently graduated Software Engineer y toa la pesca.
+                    I'm a recently graduated Software Engineer.
                 </HeroDescription>
             </HeroContent>
         </HeroContainer>
