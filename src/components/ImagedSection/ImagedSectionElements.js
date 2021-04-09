@@ -5,7 +5,7 @@ export const ImagedContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
     
-    @media screen and (max-width: 760px) {
+    @media screen and (max-width: 768px) {
         padding: 100px 0;
     }
 
@@ -31,7 +31,7 @@ export const ImagedRow = styled.div`
     align-items: center;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
-    @media screen and (max-width 768px) {
+    @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
 `
@@ -61,7 +61,7 @@ export const TopLine = styled.p`
     font-weight: 700;
     letter-spacing: 1.4px;
     text-transform: uppercase;
-    margin-bottom:16px;
+    margin-bottom: 16px;
 `
 
 export const Heading = styled.h1`

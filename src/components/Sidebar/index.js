@@ -5,7 +5,9 @@ import {
     CloseIcon,
     SidebarWrapper,
     SidebarMenu,
-    SidebarLink
+    SidebarLink,
+    SidebarBtnWrapper,
+    SidebarRoute
 } from './SidebarElements'
 
 const Sidebar = ({ isOpen, toggle }) => {
@@ -21,6 +23,11 @@ const Sidebar = ({ isOpen, toggle }) => {
                     <SidebarLink to='experience' onClick={toggle}>Experience</SidebarLink>
                     <SidebarLink to='projects' onClick={toggle}>Projects</SidebarLink>
                 </SidebarMenu>
+                <SidebarBtnWrapper>
+                    <SidebarRoute to="/personal-website/contact">
+                         Contact me!
+                    </SidebarRoute>
+                </SidebarBtnWrapper>
             </SidebarWrapper>
         </SidebarContainer>
     )
