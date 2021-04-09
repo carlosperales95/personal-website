@@ -46,32 +46,32 @@ export const homeObjTwo = {
 
 export const homeObjThree = {
     id: 'experience',
-    lightBg: false,
-    lightText: true,
-    lightTextDesc: true,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
     topLine: 'My exp obver 9000',
     headline: 'Unlimited Power and Creativity',
     description: 
     'Stuff stuff stuff that I want to say about me and stuff like that youknow.',
     buttonLabel: 'Hire me',
     imgStart: false,
-    img: myImage2,
+    img: myImage6,
     alt: 'beers',
-    dark: true,
-    primary: true,
-    darkText: false
+    dark: false,
+    primary: false,
+    darkText: true
 };
 
 
 export const homeObjFour = {
-    id: 'projects',
+    id: 'summary',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'This project for example',
-    headline: 'Unlimited Power and Creativity',
+    topLine: 'That\'s it',
+    headline: 'Is that really good or WHAT?',
     description: 
-    'Stuff stuff stuff that I want to say about me and stuff like that youknow.',
+    'Stuff stuff stuff that I want to summarize and quirky stuff.',
     buttonLabel: 'Hire me',
     imgStart: false,
     img: myImage3,

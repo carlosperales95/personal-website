@@ -12,13 +12,13 @@ import {
     ProjectsDesc, 
     ProjectsSubHeader, 
     ProjectsWrapper
-} from './ProjectsElemets'
+} from './ProjectsElements'
 
 const Projects = () => {
     return (
         <ProjectsContainer id="projects">
                 <ProjectsHeader>My projects</ProjectsHeader>
-                <CarouselSection/>
+                <CarouselSection />
         </ProjectsContainer>
     )
 }

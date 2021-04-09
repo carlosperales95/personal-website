@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
+import ExperienceSection from '../components/ExperienceSection';
 import ImagedSection from '../components/ImagedSection';
 import { 
     carouselObjs,
@@ -13,6 +14,7 @@ import {
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
 import CarouselSection from '../components/CarouselSection';
+import Milestone from '../components/Milestone';
 
 
 const Home = () => {
@@ -28,11 +30,11 @@ const Home = () => {
             <Navbar toggle={toggle} />   
             <HeroSection />
             <ImagedSection {...homeObjOne}/>
-            <ImagedSection {...homeObjTwo}/>
-            <Projects/>
+            <Milestone {...homeObjTwo}/>
+            <ExperienceSection />
             <ImagedSection {...homeObjThree}/>
             <Projects/>
-            <ImagedSection {...homeObjThree}/>
+            <ImagedSection {...homeObjFour}/>
             <Footer/>
         </>
     )
