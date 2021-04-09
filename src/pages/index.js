@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import ImagedSection from '../components/ImagedSection';
 import { 
+    carouselObjs,
     homeObjFour, 
     homeObjOne, 
     homeObjThree, 
@@ -11,6 +12,7 @@ import {
 } from '../components/ImagedSection/Data';
 import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import CarouselSection from '../components/CarouselSection';
 
 
 const Home = () => {
@@ -29,7 +31,8 @@ const Home = () => {
             <ImagedSection {...homeObjTwo}/>
             <Projects/>
             <ImagedSection {...homeObjThree}/>
-            <ImagedSection {...homeObjFour}/>
+            <Projects/>
+            <ImagedSection {...homeObjThree}/>
             <Footer/>
         </>
     )

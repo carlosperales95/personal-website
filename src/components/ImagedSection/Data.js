@@ -80,3 +80,28 @@ export const homeObjFour = {
     primary: true,
     darkText: false
 };
+
+
+export const carouselObjs = [{
+    id: 1,
+    title: 'AlMa'
+},
+{
+    id: 2,
+    title: 'This website'
+},
+{    id: 3,
+    title: 'The tanks game'
+},
+{
+    id: 4,
+    title: 'checkYourHousing'
+},
+{
+    id: 5,
+    title: 'antipwned'
+},
+{
+    id: 6,
+    title: 'api for ipractice'
+}]
