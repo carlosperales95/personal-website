@@ -30,7 +30,7 @@ export const Wrap = styled.div`
     border-radius: 10px;
     margin-bottom: 5px;
     color: #01BF71;
-    background: transparent;
+    background: #f9f9f9;
     border: 2px solid;
     display: flex;
     justify-content: space-between;

@@ -79,6 +79,10 @@ export const Column2 = styled.div`
     padding: 30px;
     margin-left: 0;
     grid-area: col2;
+
+    @media screen and (max-width: 1000px) {
+        padding-top: 100px;
+    }
 `
 
 export const MilestoneHeader = styled.div`
