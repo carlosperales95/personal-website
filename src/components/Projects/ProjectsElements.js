@@ -84,3 +84,24 @@ export const ProjectsDesc = styled.p`
 `
 
 
+export const TechWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    max-height: 80px;
+    margin-top: 10px;
+
+`
+
+export const Tech = styled.p`
+    font-size: 0.9rem;
+    background-color: #ededed;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border-color: #01BF71;
+    border: 1px, solid;
+
+
+`

@@ -9,13 +9,19 @@ import {
     FormLabel,
     FormInput,
     FormButton,
-    FormArea
+    FormArea,
+    FakeFormButton,
+    ButtonArea
 } from './ContactElements'
 
 
+
 const Contact = () => {
+
+
     return (
         <>
+        <script type="text/javascript" src="./ElusiveScript.js"></script>
             <Container>
                 <FormWrapper>
                     <Icon to="/personal-website">CaPe</Icon>
@@ -30,7 +36,10 @@ const Contact = () => {
                             <br></br>
                             <FormLabel htmlFor='for'>Message</FormLabel>
                             <FormArea type='content' required/>
-                            <FormButton type='submit'>Send!</FormButton>
+                            <ButtonArea>
+                                <FormButton type='submit'>Send!</FormButton>
+                                {/* <FakeFormButton id="fakebtn" type="button" value="Send!"  onclick="$('#msg').html('you got me');"/>                           */}
+                            </ButtonArea>
                         </Form>
                     </FormContent>
                 </FormWrapper>

@@ -30,7 +30,7 @@ const CarouselSection = () => {
             <CarouselCard>
               <CarouselIcon src={Icon1}/>
               <CarouselSubHeader>Project 2</CarouselSubHeader>
-              <CarouselDesc>project that does things</CarouselDesc>
+              <CarouselDesc>Short description of project</CarouselDesc>
             </CarouselCard>
           </CarouselItem>
           <CarouselItem>

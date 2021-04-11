@@ -21,6 +21,35 @@ export const MilestonesWrapper = styled.div`
 `
 
 
+
+export const ImagedWrapper = styled.div`
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    display: grid;
+    z-index: 1;
+    height: 1200px;
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+    justify-content: top;
+
+`
+
+export const ImagedRow = styled.div`
+    display: grid;
+    grid-auto-columns: minmax(auto, 1fr);
+    align-items: top;
+    padding-top: 300px;
+    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
+
+    @media screen and (max-width: 768px) {
+        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
+    }
+`
+
+
 export const MilestoneCard = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 0.4fr);
@@ -28,14 +57,24 @@ export const MilestoneCard = styled.div`
     grid-template-areas: 'col2 col1';
 
 `
+export const TextWrapper = styled.div`
+    max-width: 100%;
+    padding-top: 0;
+    padding-bottom: 60px;
+    justify-content: center;
+`
 
-export const MilesColumn1 = styled.div`
+export const Column1 = styled.div`
     margin-bottom: 2px;
     padding: 0 10px;
     grid-area: col1;
+    justify-content: center;
+    max-width: 100%;
+
+
 `
 
-export const MilesColumn2 = styled.div`
+export const Column2 = styled.div`
     margin-bottom: 30px;
     padding: 30px;
     margin-left: 0;
@@ -43,11 +82,18 @@ export const MilesColumn2 = styled.div`
 `
 
 export const MilestoneHeader = styled.div`
-    max-width: 250px;
     padding-top: 65px;
     font-size: 20px;
     padding-bottom: 2px;
     color: #010606;
+`
+
+export const Subtitle = styled.p`
+    max-width: 80%;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
 
 

@@ -103,6 +103,7 @@ export const FormArea = styled.textarea`
 `
 
 export const FormButton = styled.button`
+    //display: none;
     background: #01bf71;
     padding: 16px 0;
     border: none;
@@ -111,9 +112,43 @@ export const FormButton = styled.button`
     font-size: 20px;
     cursor: pointer;
 `
+
 export const Text = styled.span`
     text-align: center;
     margin-top: 24px;
     color: #fff;
     forn-size: 14px;
+`
+export const FakeFormButton = styled.input`
+    position: relative;
+    background: #01bf71;
+    padding: 16px 0;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover {
+        margin-top: 40px !important;
+        margin-right: 100px !important;
+    }
+`
+export const ButtonArea = styled.div`
+    height: 100%;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    &:hover {
+        
+        ${FakeFormButton} {
+          margin-top: 100px;
+          margin-left: 80px;
+          opactity: 1;
+          transform: translateY(-2px);
+        }
+      }
+
 `

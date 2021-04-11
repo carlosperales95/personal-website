@@ -1,31 +1,30 @@
 import React from 'react'
-import myImage8 from '../../images/alma-mater.png'
+import Accordion from '../Accordion'
 import { 
-    ImagedContainer,
-    ImagedWrapper,
-    ImagedRow,
-    Column1,
-    Column2,
-    TextWrapper,
+    ImagedContainer,    
     TopLine,
     Heading,
-    Subtitle,
     ImgWrap, 
-    Img, 
+    Img
 } from '../ImagedSection/ImagedSectionElements'
 
 
 import { 
     MilestoneCard,
-    MilestonesWrapper,
+    TextWrapper,
+    Subtitle,
     MilestoneHeader,
     MilestonesContainer,
-    MilesColumn1,
-    MilesColumn2,
+    Column1,
+    Column2,
     MilestoneImg,
-    MilestoneImgWrap
+    MilestoneImgWrap,
+    ImagedWrapper,
+    ImagedRow
+
    
 } from './MilestoneElements'
+
 
 const Milestone = ({
     id, 
@@ -49,22 +48,7 @@ const Milestone = ({
                                     <TopLine>{topLine}</TopLine>
                                     <Heading lightText={lightText}>{headline}</Heading>
                                     <Subtitle darkText={darkText}>{description}</Subtitle>
-                                    <MilestonesContainer >
-                                        <MilestonesWrapper>
-                                            <MilestoneCard>
-                                                <MilesColumn1>
-                                                    <MilestoneHeader>  
-                                                        Universita di Bologna                          
-                                                    </MilestoneHeader>
-                                                </MilesColumn1>
-                                                <MilesColumn2>
-                                                    <MilestoneImgWrap>
-                                                        <MilestoneImg src={myImage8} alt={"alt"}/>
-                                                    </MilestoneImgWrap>
-                                                </MilesColumn2>
-                                            </MilestoneCard>
-                                        </MilestonesWrapper>
-                                    </MilestonesContainer>
+                                    <Accordion/>
                                 </TextWrapper>
                             </Column1>
                             <Column2>

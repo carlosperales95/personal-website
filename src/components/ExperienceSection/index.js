@@ -3,7 +3,7 @@ import Carousel from "react-elastic-carousel";
 import { ProjectsContainer, ProjectsHeader } from "../Projects/ProjectsElements"
 import { CarouselItem,  CarouselDesc, CarouselIcon, CarouselSubHeader, CarouselWrapper} from "../CarouselSection/CarouselElements";
 import {CarouselCard} from './ExperienceSectionElements'
-import Icon1 from '../../images/tech_brain.svg'
+import {Data} from './Data'
 
 
 
@@ -18,48 +18,21 @@ const ExperienceSection = () => {
             <ProjectsHeader>My Experience</ProjectsHeader>
             <CarouselWrapper>
                 <Carousel breakPoints={breakPoints}>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Intership 1</CarouselSubHeader>
-                        <CarouselDesc>Short description of internship</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Intership 2</CarouselSubHeader>
-                        <CarouselDesc>project that does internship</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Traineeship 1</CarouselSubHeader>
-                        <CarouselDesc>Short description of traineeship</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Job 1</CarouselSubHeader>
-                        <CarouselDesc>Short description of job</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Project 5</CarouselSubHeader>
-                        <CarouselDesc>Short description of project</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
-                    <CarouselItem>
-                    <CarouselCard>
-                        <CarouselIcon src={Icon1}/>
-                        <CarouselSubHeader>Project 6</CarouselSubHeader>
-                        <CarouselDesc>Short description of project</CarouselDesc>
-                    </CarouselCard>
-                    </CarouselItem>
+                    {Data.map((item, index) => {
+                            return (
+                                <>
+                                    <CarouselItem>
+                                        <CarouselCard>
+                                            <CarouselDesc>{item.internship ? "Internship" : ""}</CarouselDesc>
+                                            <CarouselIcon src={item.icon}/>
+                                            <CarouselSubHeader>{item.title}</CarouselSubHeader>
+                                            <CarouselDesc>{item.dateFrom} - {item.dateTo}</CarouselDesc>
+                                            <CarouselDesc>{item.description}</CarouselDesc>
+                                        </CarouselCard>
+                                    </CarouselItem>
+                                </>
+                            )
+                        })}
                 </Carousel>
             </CarouselWrapper>
         </ProjectsContainer>
