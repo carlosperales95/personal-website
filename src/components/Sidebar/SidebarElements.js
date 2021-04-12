@@ -3,6 +3,7 @@ import { Link as LinkS } from 'react-scroll'
 import { Link as LinkR } from 'react-router-dom'
 import {FaTimes} from 'react-icons/fa'
 
+
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index:999;
@@ -18,12 +19,14 @@ export const SidebarContainer = styled.aside`
     top: ${({ isOpen }) => (isOpen ? '0' : '-100%')};
 `
 
+
 export const CloseIcon = styled(FaTimes)`
     color: #fff;
     top: 0;
     height: 40px;
     margin-right: 10px;
 `
+
 
 export const Icon = styled.div`
     position: absolute;
@@ -34,9 +37,11 @@ export const Icon = styled.div`
     outline: none;
 `
 
+
 export const SidebarWrapper = styled.div`
     color: #fff;
 `
+
 
 export const SidebarMenu = styled.ul`
     display: grid;
@@ -67,6 +72,7 @@ export const SidebarLink = styled(LinkS)`
         transition: 0.2s ease-in-out;
     }
 `
+
 
 export const SidebarBtnWrapper = styled.div`
     display: flex;

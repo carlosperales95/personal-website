@@ -1,9 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Carousel from "react-elastic-carousel";
-import { ProjectsContainer, ProjectsHeader } from "../Projects/ProjectsElements"
-import { CarouselItem,  CarouselDesc, CarouselIcon, CarouselSubHeader, CarouselWrapper} from "../CarouselSection/CarouselElements";
-import {CarouselCard} from './ExperienceSectionElements'
-import {Data} from './Data'
+
+import { Data } from './Data'
+import GrowDown from '../AnimationComponents/GrowDown';
+
+import { 
+    ProjectsContainer, 
+    ProjectsHeader 
+} from "../ProjectSection/ProjectSectionElements"
+
+import { 
+    CarouselCardContent, 
+    CarouselCardIcon, 
+    CarouselCardHeader, 
+    CarouselWrapper
+} from "../Carousel/CarouselElements";
+
+import {
+    ExperienceCarouselCard, 
+    ExperienceCarouselDropdown, 
+    ExperienceCarouselItem
+} from './ExperienceSectionElements'
+
 
 
 
@@ -13,6 +31,17 @@ const breakPoints = [
   
  
 const ExperienceSection = () => {
+
+    const [clicked, setClicked] = useState(false)
+
+    const toggle = index => {
+        if(clicked == index) {
+            return setClicked(null)
+        }
+
+        setClicked(index)
+    }
+
     return (
         <ProjectsContainer id="experience">
             <ProjectsHeader>My Experience</ProjectsHeader>
@@ -21,15 +50,25 @@ const ExperienceSection = () => {
                     {Data.map((item, index) => {
                             return (
                                 <>
-                                    <CarouselItem>
-                                        <CarouselCard>
-                                            <CarouselDesc>{item.internship ? "Internship" : ""}</CarouselDesc>
-                                            <CarouselIcon src={item.icon}/>
-                                            <CarouselSubHeader>{item.title}</CarouselSubHeader>
-                                            <CarouselDesc>{item.dateFrom} - {item.dateTo}</CarouselDesc>
-                                            <CarouselDesc>{item.description}</CarouselDesc>
-                                        </CarouselCard>
-                                    </CarouselItem>
+                                    <ExperienceCarouselItem onClick={() => toggle(index)} key={index}>
+                                        <ExperienceCarouselCard>
+                                            <CarouselCardContent>{item.internship ? "Internship" : ""}</CarouselCardContent>
+                                            <CarouselCardIcon src={item.icon}/>
+                                            <CarouselCardHeader>{item.title}</CarouselCardHeader>
+                                            <CarouselCardContent>{item.dateFrom} - {item.dateTo}</CarouselCardContent>
+                                            <CarouselCardContent>{item.description}</CarouselCardContent>
+                                        </ExperienceCarouselCard>
+                                        {clicked === index ? (
+                                        <GrowDown>
+                                            <ExperienceCarouselDropdown>
+                                                <h2>{item.internship}</h2>
+                                                <h3> ({item.dateFrom} - {item.dateTo})</h3>
+                                                <p>{item.description}</p>
+                                            </ExperienceCarouselDropdown>
+                                        </GrowDown>
+                                        ): null}
+                                    </ExperienceCarouselItem>
+                                         
                                 </>
                             )
                         })}

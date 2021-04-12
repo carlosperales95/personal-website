@@ -13,7 +13,10 @@ import {
     NavBtnLink
 } from './NavbarElements'
 
+
+
 const Navbar = ({ toggle }) => {
+
     const [scrollNav, setScrollNav] = useState(false)
 
     const changeNav = () => {
@@ -27,6 +30,7 @@ const Navbar = ({ toggle }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     }
+
 
     return (
         <>

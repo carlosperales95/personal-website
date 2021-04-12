@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+
 export const HeroContainer = styled.div`
     background: #0c0c0c;
     display: flex;
@@ -37,6 +38,7 @@ export const HeroBg = styled.div`
 
 `
 
+
 export const VideoBg = styled.video`
     width: 100%;
     height: 100%;
@@ -44,6 +46,7 @@ export const VideoBg = styled.video`
     object-fit: cover;
     background: #232a34;
 `
+
 
 export const HeroContent = styled.div`
     z-index: 3;
@@ -54,6 +57,7 @@ export const HeroContent = styled.div`
     flex-direction: column;
     align-items: center;
 `
+
 
 export const HeroTitle = styled.h1`
     color: #fff;
@@ -69,6 +73,7 @@ export const HeroTitle = styled.h1`
     }
 
 `
+
 
 export const HeroDescription = styled.p`
     margin-top: 24px;

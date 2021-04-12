@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 
+
 export const AccordionSection = styled.div`
     display: flex;
     flex-direction: column;
@@ -23,7 +24,6 @@ export const Container = styled.div`
 
 
 `
-
 
 
 export const Wrap = styled.div`
@@ -62,6 +62,7 @@ export const Wrap = styled.div`
     }
 
 `
+
 
 export const Dropdown = styled.div`
     border-radius: 8px;

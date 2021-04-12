@@ -1,5 +1,6 @@
 import Icon1 from '../../images/tech_brain.svg'
 
+
 export const Data = [
     {
         internship: true,

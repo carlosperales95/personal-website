@@ -21,7 +21,6 @@ const Contact = () => {
 
     return (
         <>
-        <script type="text/javascript" src="./ElusiveScript.js"></script>
             <Container>
                 <FormWrapper>
                     <Icon to="/personal-website">CaPe</Icon>

@@ -11,7 +11,10 @@ import {
 } from './FooterElements'
 
 
+
 const Footer = () => {
+
+
     return (
         <FooterContainer>
             <FooterWrapper>

@@ -1,15 +1,26 @@
-import React, {useState} from 'react'
-import {Data} from './Data'
-import {IconContext} from 'react-icons'
-import {FaAngleDown, FaAngleUp} from 'react-icons/fa'
-import { AccordionSection, Container, Wrap, Dropdown } from './AccordionComponents'
-import FadeIn from '../AnimationComponents/FadeIn';
+import React, { useState } from 'react'
+import { IconContext } from 'react-icons'
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+
 import GrowDown from '../AnimationComponents/GrowDown';
-import Animate from 'animate-css-styled-components';
+import { Data } from './Data'
+
+import { 
+    AccordionSection, 
+    Container, 
+    Wrap, 
+    Dropdown 
+} from './AccordionComponents'
+
+// import Animate from 'animate-css-styled-components';
+
 
 const Accordion = () => {
+
     const [clicked, setClicked] = useState(false)
+
     const toggle = index => {
+
         if(clicked == index) {
             return setClicked(null)
         }
@@ -19,6 +30,8 @@ const Accordion = () => {
 
 
     return (
+
+        
         <IconContext.Provider value={{ color: '#01BF71', size: '25px' }}>
             <AccordionSection>
                 <Container>

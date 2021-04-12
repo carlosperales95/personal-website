@@ -1,6 +1,9 @@
 import styled from 'styled-components'
 import { Link as LinkR } from 'react-router-dom'
 
+
+
+
 export const Container = styled.div`
     min-height: 692px;
     position: fixed;
@@ -16,6 +19,7 @@ export const Container = styled.div`
         rgba(10, 201, 122, 1) 100%
     );
 `
+
 
 export const Icon = styled(LinkR)`
         margin-left: 32px;
@@ -45,6 +49,7 @@ export const FormWrapper = styled.div`
 
 `
 
+
 export const FormContent = styled.div`
         height: 100%;
         display: flex;
@@ -55,6 +60,7 @@ export const FormContent = styled.div`
             padding: 10px;
         }
 `
+
 
 export const Form = styled.form`
         background: #010101;
@@ -73,6 +79,7 @@ export const Form = styled.form`
         }
 `
 
+
 export const FormHeader = styled.h1`
     margin-bottom: 40px;
     color: #fff;
@@ -81,12 +88,14 @@ export const FormHeader = styled.h1`
     text-align: center;
 `
 
+
 export const FormLabel = styled.label`
     margin-bottom: 8px;
     color: #fff;
     font-size: 14px;
 
 `
+
 
 export const FormInput = styled.input`
     padding: 16px 16px;
@@ -95,12 +104,14 @@ export const FormInput = styled.input`
     border-radius: 4px;
 `
 
+
 export const FormArea = styled.textarea`
     padding: 16px 16px;
     margin-bottom: 32px;
     border: none;
     border-radius: 4px;
 `
+
 
 export const FormButton = styled.button`
     //display: none;
@@ -113,12 +124,7 @@ export const FormButton = styled.button`
     cursor: pointer;
 `
 
-export const Text = styled.span`
-    text-align: center;
-    margin-top: 24px;
-    color: #fff;
-    forn-size: 14px;
-`
+
 export const FakeFormButton = styled.input`
     position: relative;
     background: #01bf71;
@@ -134,6 +140,8 @@ export const FakeFormButton = styled.input`
         margin-right: 100px !important;
     }
 `
+
+
 export const ButtonArea = styled.div`
     height: 100%;
     display: flex;

@@ -1,23 +1,26 @@
 import React, {useState} from 'react'
+
 import Sidebar from '../components/Sidebar';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+
 import HeroSection from '../components/HeroSection';
 import ExperienceSection from '../components/ExperienceSection';
 import ImagedSection from '../components/ImagedSection';
+
 import { 
-    carouselObjs,
     homeObjFour, 
     homeObjOne, 
     homeObjThree, 
     homeObjTwo 
 } from '../components/ImagedSection/Data';
-import Projects from '../components/Projects';
-import Footer from '../components/Footer';
-import CarouselSection from '../components/CarouselSection';
-import Milestone from '../components/Milestone';
+
+import ProjectSection from '../components/ProjectSection';
+import EducationSection from '../components/EducationSection';
 
 
 const Home = () => {
+
     const [isOpen, setIsOpen] = useState(false)
 
     const toggle = () => {
@@ -30,10 +33,10 @@ const Home = () => {
             <Navbar toggle={toggle} />   
             <HeroSection />
             <ImagedSection {...homeObjOne}/>
-            <Milestone {...homeObjTwo}/>
+            <EducationSection {...homeObjTwo}/>
             <ExperienceSection />
             <ImagedSection {...homeObjThree}/>
-            <Projects/>
+            <ProjectSection/>
             <ImagedSection {...homeObjFour}/>
             <Footer/>
         </>

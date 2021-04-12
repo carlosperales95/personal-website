@@ -1,9 +1,12 @@
 import styled from 'styled-components'
 import {Link as LinkR} from 'react-router-dom'; 
 
+
+
 export const FooterContainer = styled.footer`
     background-color: #101522;
 `
+
 
 export const FooterWrapper = styled.div`
     padding: 48px 24px;
@@ -15,6 +18,7 @@ export const FooterWrapper = styled.div`
     margin: 0 auto;
 `
 
+
 export const FooterLinksContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -25,6 +29,7 @@ export const FooterLinksContainer = styled.div`
 
 `
 
+
 export const FooterLinksWrapper = styled.div`
     display: flex;
 
@@ -33,6 +38,7 @@ export const FooterLinksWrapper = styled.div`
     }
 
 `
+
 
 export const FooterLinkItems = styled.div`
     display: flex;
@@ -50,11 +56,13 @@ export const FooterLinkItems = styled.div`
     }
 `
 
+
 export const FooterLinkTitle = styled.h1`
     font-size: 14px;
     margin-bottom: 16px;
 
 `
+
 
 export const FooterLink = styled(LinkR)`
     color: #fff;
@@ -68,6 +76,7 @@ export const FooterLink = styled(LinkR)`
     }
 
 `
+
 
 export const FooterExternalLink = styled.a`
     color: #fff;

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button } from '../ButtonElement'
+import { Button } from '../Button/ButtonElements'
 import { 
     ImagedContainer,
     ImagedWrapper,
