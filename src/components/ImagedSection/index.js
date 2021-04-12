@@ -30,7 +30,8 @@ const ImagedSection = ({
     alt,
     dark,
     dark2,
-    primary
+    primary,
+    where
 }) => {
     return (
         <>
@@ -42,18 +43,21 @@ const ImagedSection = ({
                                 <TopLine>{topLine}</TopLine>
                                 <Heading lightText={lightText}>{headline}</Heading>
                                 <Subtitle darkText={darkText}>{description}</Subtitle>
-                                <BtnWrap>
-                                    <Button to="home" 
-                                    primary={primary ? 1 : 0}
-                                    dark={dark ? 1 : 0}
-                                    dark2={dark2 ? 1: 0}
-                                    smooth={true}
-                                    duration={500}
-                                    spy={true}
-                                    exact="true"
-                                    offset={-80}
-                                    >{buttonLabel}</Button>
-                                </BtnWrap>
+                                {where ? 
+                                    <BtnWrap>
+                                        <Button to={where} 
+                                        primary={primary ? 1 : 0}
+                                        dark={dark ? 1 : 0}
+                                        dark2={dark2 ? 1: 0}
+                                        smooth={true}
+                                        duration={500}
+                                        spy={true}
+                                        exact="true"
+                                        offset={-80}
+                                        >{buttonLabel}</Button>
+                                    </BtnWrap> 
+                                : null}
+                                
                             </TextWrapper>
                         </Column1>
                         <Column2>

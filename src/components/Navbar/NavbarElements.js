@@ -128,3 +128,16 @@ export const NavBtnLink = styled(LinkR)`
         color: #010606;
     }
 `
+
+
+export const LogoImg = styled.img `
+    display: block;
+    height: 100px;
+    padding: 5px;
+    width: 200;
+    top: 0;
+    right: 0;
+    font-size: 1.8rem;
+    cursor: pointer;
+    fill: #fff;​
+    `

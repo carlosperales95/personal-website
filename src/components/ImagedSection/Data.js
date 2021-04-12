@@ -64,21 +64,22 @@ export const homeObjThree = {
 
 
 export const homeObjFour = {
-    id: 'summary',
+    id: 'contact',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
     topLine: 'That\'s it',
     headline: 'Is that really good or WHAT?',
     description: 
-    'Stuff stuff stuff that I want to summarize and quirky stuff.',
-    buttonLabel: 'Hire me',
+    'If you liked it, send me an email by clicking the button.',
+    buttonLabel: 'Leave a message!',
     imgStart: false,
     img: myImage3,
     alt: 'micdrop',
     dark: true,
     primary: true,
-    darkText: false
+    darkText: false,
+    where: "/personal-website/contact"
 };
 
 

@@ -1,6 +1,8 @@
 import React, {useState, useEffect} from 'react'
+import SiteLogo from '../../images/sapocodelogo.png'
 import {animateScroll as scroll} from 'react-scroll'
 import {FaBars} from 'react-icons/fa'
+import {IconContext} from 'react-icons/lib'
 import {
     Nav,
     NavbarContainer, 
@@ -10,7 +12,8 @@ import {
     NavItem, 
     NavLinks,
     NavBtn,
-    NavBtnLink
+    NavBtnLink,
+    LogoImg
 } from './NavbarElements'
 
 
@@ -34,10 +37,11 @@ const Navbar = ({ toggle }) => {
 
     return (
         <>
+        <IconContext.Provider value={{color: '#fff'}}>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
                     <NavLogo to='/personal-website' onClick={toggleHome}>
-                        CaPe
+                        <LogoImg alt="logo" src={SiteLogo}/>
                     </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars/>
@@ -87,12 +91,24 @@ const Navbar = ({ toggle }) => {
                                 Projects
                             </NavLinks>
                         </NavItem>
+                        <NavItem>
+                            <NavLinks to="projects"
+                            smooth={true} 
+                            duration={500} 
+                            spy={true} 
+                            exact='true' 
+                            offset={-80}
+                            >
+                                Contact
+                            </NavLinks>
+                        </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="/personal-website/contact">Contact me!</NavBtnLink>
+                        <NavBtnLink to="#">Contact me!</NavBtnLink>
                     </NavBtn>
                 </NavbarContainer>
             </Nav>
+            </IconContext.Provider>
         </>
     )
 }

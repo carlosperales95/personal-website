@@ -44,9 +44,9 @@ const ProjectSection = () => {
                                             <CarouselCardHeader>{item.title}</CarouselCardHeader>
                                             <CarouselCardContent>{item.content}</CarouselCardContent>
                                             <TechWrapper>
-                                                <Tech>{item.tech1 ? item.tech1 : ""}</Tech>
-                                                <Tech>{item.tech2 ? item.tech2 : ""}</Tech>
-                                                <Tech>{item.tech3 ? item.tech3 : ""}</Tech>
+                                                <Tech>{item.tech1 ? item.tech1 : "    "}</Tech>
+                                                <Tech>{item.tech2 ? item.tech2 : "    "}</Tech>
+                                                <Tech>{item.tech3 ? item.tech3 : "    "}</Tech>
                                             </TechWrapper>
                                         </ProjectCarouselCard>
                                     </CarouselItem>
