@@ -7,7 +7,8 @@ import {
     VideoBg,
     HeroContent,
     HeroTitle,
-    HeroDescription
+    HeroDescription,
+    DownloadLink
 } from './HeroElements'
 
 
@@ -30,6 +31,7 @@ const HeroSection = () => {
                 <HeroDescription>
                     I'm a recently graduated Software Engineer.
                 </HeroDescription>
+                {/* <DownloadLink href="../../../public/CV_CarlosPerales.pdf" target="_blank" download="CV_CarlosPerales.pdf">Download my CV</DownloadLink> */}
             </HeroContent>
         </HeroContainer>
     )

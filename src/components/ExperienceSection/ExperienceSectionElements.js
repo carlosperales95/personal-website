@@ -7,10 +7,11 @@ export const ExperienceContainer = styled.div`
     height: 1200px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     background: #010606;
     padding-top: 100px;
+    align-items: center;
+    text-align: center;
 
     @media screen and (max-width: 480px) {
         height: 1300px;
@@ -63,8 +64,10 @@ export const ExperienceCarouselDropdown = styled.div`
     color: #fff;
     height: 300px;
     width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     display: flex;
+    flex-direction: column;
+    justify-content: top;
     align-items: left;
     padding: 30px;
     padding-left: 20px;
@@ -72,6 +75,8 @@ export const ExperienceCarouselDropdown = styled.div`
     margin-top: 10px;
     border: 1px solid;
     border-color: #01BF71;
+    text-align: left;
+
 
 
     // border-bottom: 1px solid #00ffb9;
@@ -101,7 +106,12 @@ export const ExperienceCarouselPlaceholder = styled.div`
     align-items: center;
     text-align: center;
     flex-direction: column;
-    
+    position: relative;
+    margin-top: ;
+   // display: block;
+   // z-index: 1;
+
+
 
 
 `
@@ -124,9 +134,13 @@ export const ExperienceCarouselItem = styled.div`
 export const ImgBack = styled.img`
     width: 100%;
     max-width: 450px;
-    z-index: 1;
     align-content: center;
-    margin-top: -100px;
+   // margin-top: -100px;
     padding-right: 0;
     opacity: 0.6;
+
+    @media screen and (max-width: 480px) {
+        margin-top: 100px;
+    }
+
 `

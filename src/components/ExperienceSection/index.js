@@ -11,6 +11,10 @@ import {
 } from "../ProjectSection/ProjectSectionElements"
 
 import { 
+     Subtitle 
+ } from "../ImagedSection/ImagedSectionElements"
+
+import { 
     CarouselCardContent, 
     CarouselCardIcon, 
     CarouselCardHeader, 
@@ -53,6 +57,10 @@ const ExperienceSection = () => {
         <ExperienceContainer id="experience">
             <TopLine>My exp over 9000</TopLine>
             <ProjectsHeader>My Experience</ProjectsHeader>
+            <Subtitle>Haven't had so many professional experienced so far, but I've been around.</Subtitle>
+            {/* <ExperienceCarouselPlaceholder>
+                    <ImgBack src={imgBack} alt="cyborg"/>
+            </ ExperienceCarouselPlaceholder> */}
             <CarouselWrapper>
                 <Carousel breakPoints={breakPoints}>
                     {Data.map((item, index) => {
@@ -70,19 +78,13 @@ const ExperienceSection = () => {
                                         {clicked === index ? (
                                         <GrowDown>
                                             <ExperienceCarouselDropdown>
-                                                <h2>{item.internship}</h2>
+                                                <h2>{item.internship ? "Internship" : ""}</h2>
                                                 <h3> ({item.dateFrom} - {item.dateTo})</h3>
                                                 <p>{item.description}</p>
                                             </ExperienceCarouselDropdown>
                                         </GrowDown>
-                                        ): <FadeIn> 
-                                            <ExperienceCarouselPlaceholder>
-                                                <ImgBack src={imgBack} alt="cyborg"/>
-                                            </ ExperienceCarouselPlaceholder>
-                                        </FadeIn> 
-                                        }
+                                        ): null}
                                     </ExperienceCarouselItem>
-                     
                                 </>
                             )
                         })}

@@ -26,6 +26,7 @@ export const CarouselWrapper = styled.div`
     margin-left: auto;
     padding: 60px 20px 20px 24px;
     justify-content: center;
+
 `
 
 

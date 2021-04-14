@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
 
 
 
@@ -91,4 +92,29 @@ export const HeroDescription = styled.p`
     }
 
 
+`
+
+export const DownloadLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #01BF71;
+    white-space: nowrap;
+    padding: 14px 48px;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    broder: none;
+    cursor: pointer;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    font-weight: 700;
+
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color:#01bf71;
+    }
 `

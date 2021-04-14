@@ -47,7 +47,7 @@ export const Wrap = styled.div`
             font-size: 0.9rem;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 600px) {
             font-size: 0.8rem;
         }
     }
