@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.64b24a9c.chunk.css",
-    "main.js": "/personal-website/static/js/main.38956165.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.38956165.chunk.js.map",
+    "main.js": "/personal-website/static/js/main.cc6a9e7b.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.cc6a9e7b.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.3bf14499.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.3bf14499.js.map",
-    "static/js/2.d7ef25be.chunk.js": "/personal-website/static/js/2.d7ef25be.chunk.js",
-    "static/js/2.d7ef25be.chunk.js.map": "/personal-website/static/js/2.d7ef25be.chunk.js.map",
+    "static/js/2.0e893d27.chunk.js": "/personal-website/static/js/2.0e893d27.chunk.js",
+    "static/js/2.0e893d27.chunk.js.map": "/personal-website/static/js/2.0e893d27.chunk.js.map",
     "index.html": "/personal-website/index.html",
     "static/css/main.64b24a9c.chunk.css.map": "/personal-website/static/css/main.64b24a9c.chunk.css.map",
-    "static/js/2.d7ef25be.chunk.js.LICENSE.txt": "/personal-website/static/js/2.d7ef25be.chunk.js.LICENSE.txt",
+    "static/js/2.0e893d27.chunk.js.LICENSE.txt": "/personal-website/static/js/2.0e893d27.chunk.js.LICENSE.txt",
     "static/media/alma-mater.f6c64dd8.png": "/personal-website/static/media/alma-mater.f6c64dd8.png",
     "static/media/artist.55a804b0.svg": "/personal-website/static/media/artist.55a804b0.svg",
     "static/media/beer_celebration.533bf14a.svg": "/personal-website/static/media/beer_celebration.533bf14a.svg",
+    "static/media/cyborg-unsubscribed.6b441458.png": "/personal-website/static/media/cyborg-unsubscribed.6b441458.png",
     "static/media/data_surround.12451c54.svg": "/personal-website/static/media/data_surround.12451c54.svg",
     "static/media/discovery.2e7aef20.svg": "/personal-website/static/media/discovery.2e7aef20.svg",
     "static/media/hack_code.cd584f5a.mp4": "/personal-website/static/media/hack_code.cd584f5a.mp4",
@@ -27,8 +28,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.3bf14499.js",
-    "static/js/2.d7ef25be.chunk.js",
+    "static/js/2.0e893d27.chunk.js",
     "static/css/main.64b24a9c.chunk.css",
-    "static/js/main.38956165.chunk.js"
+    "static/js/main.cc6a9e7b.chunk.js"
   ]
 }
