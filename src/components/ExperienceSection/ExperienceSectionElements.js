@@ -2,6 +2,21 @@ import styled from 'styled-components'
 
 
 
+export const ExperienceContainer = styled.div`
+    height: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #010606;
+    padding-top: 100px;
+
+    @media screen and (max-width: 480px) {
+        height: 1300px;
+    }
+`
+
+
 export const ExperienceCarouselCard = styled.div`
     background: #fff;
     display: flex;
@@ -29,7 +44,8 @@ export const ExperienceCarouselDropdown = styled.div`
     margin-left: 0;
     color: #fff;
     height: 300px;
-    width: 700px;
+    width: 100%;
+    width-width: 700px;
     display: flex;
     align-items: left;
     padding: 30px;

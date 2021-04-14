@@ -19,7 +19,7 @@ import {
     EducationImagedWrapper,
     EducationImagedRow
 
-} from './ProjectSectionElements'
+} from './EducationSectionElements'
 
 
 const EducationSection = ({

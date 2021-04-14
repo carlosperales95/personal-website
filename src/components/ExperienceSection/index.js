@@ -5,7 +5,7 @@ import { Data } from './Data'
 import GrowDown from '../AnimationComponents/GrowDown';
 
 import { 
-    ProjectsContainer, 
+   // ProjectsContainer, 
     ProjectsHeader 
 } from "../ProjectSection/ProjectSectionElements"
 
@@ -17,11 +17,13 @@ import {
 } from "../Carousel/CarouselElements";
 
 import {
+    ExperienceContainer,
     ExperienceCarouselCard, 
     ExperienceCarouselDropdown, 
     ExperienceCarouselItem
 } from './ExperienceSectionElements'
 
+import { TopLine } from "../ImagedSection/ImagedSectionElements"
 
 
 
@@ -43,7 +45,8 @@ const ExperienceSection = () => {
     }
 
     return (
-        <ProjectsContainer id="experience">
+        <ExperienceContainer id="experience">
+            <TopLine>My exp over 9000</TopLine>
             <ProjectsHeader>My Experience</ProjectsHeader>
             <CarouselWrapper>
                 <Carousel breakPoints={breakPoints}>
@@ -74,7 +77,7 @@ const ExperienceSection = () => {
                         })}
                 </Carousel>
             </CarouselWrapper>
-        </ProjectsContainer>
+        </ExperienceContainer>
     )
 }
 

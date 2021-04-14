@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.64b24a9c.chunk.css",
-    "main.js": "/personal-website/static/js/main.6395f225.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.6395f225.chunk.js.map",
+    "main.js": "/personal-website/static/js/main.46e3e969.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.46e3e969.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.3bf14499.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.3bf14499.js.map",
-    "static/js/2.7d99a9e4.chunk.js": "/personal-website/static/js/2.7d99a9e4.chunk.js",
-    "static/js/2.7d99a9e4.chunk.js.map": "/personal-website/static/js/2.7d99a9e4.chunk.js.map",
+    "static/js/2.d7ef25be.chunk.js": "/personal-website/static/js/2.d7ef25be.chunk.js",
+    "static/js/2.d7ef25be.chunk.js.map": "/personal-website/static/js/2.d7ef25be.chunk.js.map",
     "index.html": "/personal-website/index.html",
     "static/css/main.64b24a9c.chunk.css.map": "/personal-website/static/css/main.64b24a9c.chunk.css.map",
-    "static/js/2.7d99a9e4.chunk.js.LICENSE.txt": "/personal-website/static/js/2.7d99a9e4.chunk.js.LICENSE.txt",
+    "static/js/2.d7ef25be.chunk.js.LICENSE.txt": "/personal-website/static/js/2.d7ef25be.chunk.js.LICENSE.txt",
     "static/media/alma-mater.f6c64dd8.png": "/personal-website/static/media/alma-mater.f6c64dd8.png",
     "static/media/artist.55a804b0.svg": "/personal-website/static/media/artist.55a804b0.svg",
     "static/media/beer_celebration.533bf14a.svg": "/personal-website/static/media/beer_celebration.533bf14a.svg",
@@ -19,14 +19,16 @@
     "static/media/mic_drop.ca7310be.svg": "/personal-website/static/media/mic_drop.ca7310be.svg",
     "static/media/mountain.fd435ba6.svg": "/personal-website/static/media/mountain.fd435ba6.svg",
     "static/media/plant.3811e658.svg": "/personal-website/static/media/plant.3811e658.svg",
+    "static/media/sapocodelogo.b198f8c3.png": "/personal-website/static/media/sapocodelogo.b198f8c3.png",
     "static/media/tech_brain.5a961c2e.svg": "/personal-website/static/media/tech_brain.5a961c2e.svg",
     "static/media/universidad-deusto.1f5ff41a.png": "/personal-website/static/media/universidad-deusto.1f5ff41a.png",
-    "static/media/uppsala-universitet.7db3b67d.png": "/personal-website/static/media/uppsala-universitet.7db3b67d.png"
+    "static/media/uppsala-universitet.7db3b67d.png": "/personal-website/static/media/uppsala-universitet.7db3b67d.png",
+    "static/media/vrije-universiteit.3061a5a3.png": "/personal-website/static/media/vrije-universiteit.3061a5a3.png"
   },
   "entrypoints": [
     "static/js/runtime-main.3bf14499.js",
-    "static/js/2.7d99a9e4.chunk.js",
+    "static/js/2.d7ef25be.chunk.js",
     "static/css/main.64b24a9c.chunk.css",
-    "static/js/main.6395f225.chunk.js"
+    "static/js/main.46e3e969.chunk.js"
   ]
 }

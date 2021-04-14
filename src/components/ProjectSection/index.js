@@ -18,6 +18,9 @@ import {
     Tech
 } from './ProjectSectionElements'
 
+import { TopLine } from "../ImagedSection/ImagedSectionElements"
+
+
 
 const breakPoints = [
     { width: 1, itemsToShow: 1 },
@@ -32,6 +35,7 @@ const ProjectSection = () => {
 
     return (
         <ProjectsContainer id="projects">
+                <TopLine>My unicorn companies</TopLine>
                 <ProjectsHeader>My projects</ProjectsHeader>
                 <CarouselWrapper>
                 <Carousel breakPoints={breakPoints}>

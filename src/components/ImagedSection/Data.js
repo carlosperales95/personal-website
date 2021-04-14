@@ -31,8 +31,8 @@ export const homeObjTwo = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'My Education',
-    headline: '',
+    topLine: 'SAGE VIBES',
+    headline: 'My Education',
     description: 
     'Stuff stuff stuff that I want to say about me and stuff like that youknow.',
     buttonLabel: 'Hire me',
@@ -49,7 +49,7 @@ export const homeObjThree = {
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'My exp obver 9000',
+    topLine: 'I\'m so good',
     headline: 'Unlimited Power and Creativity',
     description: 
     'Stuff stuff stuff that I want to say about me and stuff like that youknow.',

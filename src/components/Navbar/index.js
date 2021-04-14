@@ -92,7 +92,7 @@ const Navbar = ({ toggle }) => {
                             </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="projects"
+                            <NavLinks to="contact"
                             smooth={true} 
                             duration={500} 
                             spy={true} 
@@ -104,7 +104,7 @@ const Navbar = ({ toggle }) => {
                         </NavItem>
                     </NavMenu>
                     <NavBtn>
-                        <NavBtnLink to="#">Contact me!</NavBtnLink>
+                        {/* <NavBtnLink to="#">Contact me!</NavBtnLink> */}
                     </NavBtn>
                 </NavbarContainer>
             </Nav>

@@ -21,6 +21,7 @@ export const ImagedWrapper = styled.div`
     margin-left: auto;
     padding: 0 24px;
     justify-content: center;
+    padding-top: 20px;
 
 `
 

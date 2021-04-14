@@ -38,7 +38,7 @@ export const ProjectsCard = styled.div`
 
 
 export const ProjectsHeader = styled.h1`
-    font-size: 2.5rem;
+    font-size: 48px;
     color: #fff;
     margin-bottom: 64px;
 
