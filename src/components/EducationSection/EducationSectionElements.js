@@ -7,13 +7,17 @@ export const EducationImagedWrapper = styled.div`
     padding-top: 0 !important;
     display: grid;
     z-index: 1;
-    height: 1200px;
+    height: 1000px;
     width: 100%;
     max-width: 1100px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
     justify-content: top;
+
+    @media screen and (max-width: 768px) {
+        height: 1250px;
+    }
 
 `
 

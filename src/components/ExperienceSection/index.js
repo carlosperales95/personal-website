@@ -3,6 +3,7 @@ import Carousel from "react-elastic-carousel";
 
 import { Data } from './Data'
 import GrowDown from '../AnimationComponents/GrowDown';
+import FadeIn from '../AnimationComponents/FadeIn';
 
 import { 
    // ProjectsContainer, 
@@ -20,10 +21,14 @@ import {
     ExperienceContainer,
     ExperienceCarouselCard, 
     ExperienceCarouselDropdown, 
-    ExperienceCarouselItem
+    ExperienceCarouselItem,
+    ExperienceCarouselPlaceholder,
+    ImgBack
 } from './ExperienceSectionElements'
 
-import { TopLine } from "../ImagedSection/ImagedSectionElements"
+import { ImgWrap, TopLine } from "../ImagedSection/ImagedSectionElements"
+import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
+import imgBack from '../../images/cyborg-unsubscribed.png'
 
 
 
@@ -60,6 +65,7 @@ const ExperienceSection = () => {
                                             <CarouselCardHeader>{item.title}</CarouselCardHeader>
                                             <CarouselCardContent>{item.dateFrom} - {item.dateTo}</CarouselCardContent>
                                             <CarouselCardContent>{item.description}</CarouselCardContent>
+                                            <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
                                         </ExperienceCarouselCard>
                                         {clicked === index ? (
                                         <GrowDown>
@@ -69,9 +75,14 @@ const ExperienceSection = () => {
                                                 <p>{item.description}</p>
                                             </ExperienceCarouselDropdown>
                                         </GrowDown>
-                                        ): null}
+                                        ): <FadeIn> 
+                                            <ExperienceCarouselPlaceholder>
+                                                <ImgBack src={imgBack} alt="cyborg"/>
+                                            </ ExperienceCarouselPlaceholder>
+                                        </FadeIn> 
+                                        }
                                     </ExperienceCarouselItem>
-                                         
+                     
                                 </>
                             )
                         })}

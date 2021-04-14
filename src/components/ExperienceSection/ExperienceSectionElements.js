@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { CarouselCardContent, CarouselCardHeader } from '../Carousel/CarouselElements'
 
 
 
@@ -19,6 +20,7 @@ export const ExperienceContainer = styled.div`
 
 export const ExperienceCarouselCard = styled.div`
     background: #fff;
+    color: #01BF71;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,11 +31,27 @@ export const ExperienceCarouselCard = styled.div`
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
+    text-align: center;
+    
 
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 480px) {
+        ${CarouselCardContent} {
+            visibility: hidden;
+        }
+        padding: 10px;
+        height: 300px;
+      
+
+        span {
+            margin-top: -80px;
+            size: 10px;
+        }
     }
 `
 
@@ -45,14 +63,13 @@ export const ExperienceCarouselDropdown = styled.div`
     color: #fff;
     height: 300px;
     width: 100%;
-    width-width: 700px;
+    max-width: 700px;
     display: flex;
     align-items: left;
     padding: 30px;
     padding-left: 20px;
     margin-bottom: 30px;
     margin-top: 10px;
-    border-style: dotted;
     border: 1px solid;
     border-color: #01BF71;
 
@@ -74,7 +91,20 @@ export const ExperienceCarouselDropdown = styled.div`
         font-size: 1rem;
     }
 `
+export const ExperienceCarouselPlaceholder = styled.div`
+    border-radius: 10px;
+    background: transparent;
+    height: 300px;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    
 
+
+`
 
 export const ExperienceCarouselItem = styled.div`
 
@@ -89,4 +119,14 @@ export const ExperienceCarouselItem = styled.div`
     margin: 10 10 10 15px;
     font-size: 4em;
     padding: 20px;
+`
+
+export const ImgBack = styled.img`
+    width: 100%;
+    max-width: 450px;
+    z-index: 1;
+    align-content: center;
+    margin-top: -100px;
+    padding-right: 0;
+    opacity: 0.6;
 `
