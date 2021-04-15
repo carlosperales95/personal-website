@@ -15,7 +15,8 @@ import {
     ProjectCarouselCard,
     ProjectsHeader, 
     TechWrapper,
-    Tech
+    Tech,
+    ProjectCarousel
 } from './ProjectSectionElements'
 
 import { TopLine } from "../ImagedSection/ImagedSectionElements"
@@ -38,7 +39,7 @@ const ProjectSection = () => {
                 <TopLine>My unicorn companies</TopLine>
                 <ProjectsHeader>My projects</ProjectsHeader>
                 <CarouselWrapper>
-                <Carousel breakPoints={breakPoints}>
+                <ProjectCarousel breakPoints={breakPoints}>
                     {Data.map((item, index) => {
                             return (
                                 <>
@@ -57,7 +58,7 @@ const ProjectSection = () => {
                                 </>
                             )
                         })}
-                </Carousel>
+                </ProjectCarousel>
             </CarouselWrapper>
         </ProjectsContainer>
     )

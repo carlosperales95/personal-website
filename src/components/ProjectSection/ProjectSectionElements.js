@@ -1,4 +1,6 @@
 import styled from'styled-components'
+import Carousel from "react-elastic-carousel";
+
 
 
 
@@ -34,6 +36,30 @@ export const ProjectsCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;
     }
+`
+
+export const ProjectCarousel = styled(Carousel)`
+    .rec-arrow-right, .rec-arrow-left{
+
+        &:hover, &:focus {
+            background-color: #01BF71;
+            color: #fff;
+
+            &:disabled{ 
+                background-color: transparent;
+            }
+        }
+    }
+
+    .rec-dot {
+        background-color: #fff;
+    }
+
+    .rec-dot_active{
+        background-color: #01BF71;
+        box-shadow: 0 0 1px 3px #fff;
+    }
+
 `
 
 

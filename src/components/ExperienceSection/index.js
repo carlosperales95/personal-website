@@ -28,6 +28,7 @@ import {
     ExperienceCarouselItem,
     TechInfoContainer,
     ToggleWrap,
+    ExperienceCarousel,
     ExperienceCarouselPlaceholder,
     ImgBack
 } from './ExperienceSectionElements'
@@ -64,7 +65,7 @@ const ExperienceSection = () => {
                     <ImgBack src={imgBack} alt="cyborg"/>
             </ ExperienceCarouselPlaceholder> */}
             <CarouselWrapper>
-                <Carousel breakPoints={breakPoints}>
+                <ExperienceCarousel breakPoints={breakPoints}>
                     {Data.map((item, index) => {
                             return (
                                 <>
@@ -107,7 +108,7 @@ const ExperienceSection = () => {
                                 </>
                             )
                         })}
-                </Carousel>
+                </ExperienceCarousel>
             </CarouselWrapper>
         </ExperienceContainer>
     )

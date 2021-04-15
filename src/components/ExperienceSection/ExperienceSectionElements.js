@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import { CarouselCardContent, CarouselCardHeader } from '../Carousel/CarouselElements'
-
+import Carousel from "react-elastic-carousel";
 
 
 export const ExperienceContainer = styled.div`
@@ -18,6 +18,31 @@ export const ExperienceContainer = styled.div`
     }
 `
 
+export const ExperienceCarousel = styled(Carousel)`
+    .rec-arrow-right, .rec-arrow-left{
+
+        &:hover, &:focus {
+            background-color: #01BF71;
+            color: #fff;
+
+            &:disabled{ 
+                background-color: transparent;
+            }
+        }
+    }
+
+    .rec-dot {
+        background-color: #fff;
+
+    }
+
+    .rec-dot_active{
+        background-color: #01BF71;
+        box-shadow: 0 0 1px 3px #fff;
+
+    }
+
+`
 
 export const ExperienceCarouselCard = styled.div`
     background: #fff;
