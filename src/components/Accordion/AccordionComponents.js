@@ -40,6 +40,7 @@ export const Wrap = styled.div`
     cursor: pointer;
 
     h1 {
+
         padding: 2rem;
         font-size: 1rem;
 
@@ -101,4 +102,7 @@ export const Dropdown = styled.div`
 
 `
 
+export const IconWrap = styled.div`
+    margin-right: 0px;
+`
 

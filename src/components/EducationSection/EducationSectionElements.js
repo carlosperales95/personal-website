@@ -26,7 +26,7 @@ export const EducationImagedRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: top;
-    padding-top: 300px;
+    padding-top: 200px;
     grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col1'` : `'col1 col2'`)};
 
     @media screen and (max-width: 768px) {

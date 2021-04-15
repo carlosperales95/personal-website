@@ -9,7 +9,8 @@ import {
     AccordionSection, 
     Container, 
     Wrap, 
-    Dropdown 
+    Dropdown,
+    IconWrap 
 } from './AccordionComponents'
 
 // import Animate from 'animate-css-styled-components';
@@ -39,7 +40,9 @@ const Accordion = () => {
                         return (
                             <>
                                 <Wrap onClick={() => toggle(index)} key={index}>
-                                    <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
+                                    <IconWrap>
+                                        <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
+                                    </IconWrap>
                                     <h1>{item.title}</h1>
                                     <img src={item.icon}/>
                                 </Wrap>
