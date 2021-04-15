@@ -94,9 +94,7 @@ export const ExperienceCarouselDropdown = styled.div`
     p {
         font-size: 1rem;
     }
-    span {
-        max-width: 5px !important;
-    }
+
 
     @media screen and (max-width: 480px) {
         height: 100%;
