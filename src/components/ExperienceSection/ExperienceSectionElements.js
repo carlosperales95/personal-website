@@ -14,7 +14,7 @@ export const ExperienceContainer = styled.div`
     text-align: center;
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 1350px;
     }
 `
 
@@ -33,7 +33,10 @@ export const ExperienceCarouselCard = styled.div`
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
     text-align: center;
-    
+    padding-bottom: 0px;
+    ${CarouselCardContent} {
+        margin-bottom: 0.2rem;
+    }
 
     &:hover {
         transform: scale(1.02);
@@ -78,10 +81,6 @@ export const ExperienceCarouselDropdown = styled.div`
     text-align: left;
 
 
-
-    // border-bottom: 1px solid #00ffb9;
-    // border-top: 1px solid #00ffb9;
-
     h2 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -94,6 +93,21 @@ export const ExperienceCarouselDropdown = styled.div`
 
     p {
         font-size: 1rem;
+    }
+    span {
+        max-width: 5px !important;
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 100%;
+        max-height: 521px;
+        h2 {
+            display: none;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
     }
 `
 export const ExperienceCarouselPlaceholder = styled.div`
@@ -142,5 +156,17 @@ export const ImgBack = styled.img`
     @media screen and (max-width: 480px) {
         margin-top: 100px;
     }
+
+`
+
+
+export const TechInfoContainer = styled.div`
+    margin-top: 10px;
+    display: flex;
+`
+
+export const ToggleWrap = styled.div`
+    margin-top: 10px;
+    margin-bottom: 0 !important;
 
 `

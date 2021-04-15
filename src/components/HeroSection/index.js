@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Video from '../../videos/hack_code.mp4'
+import myPDF from './CV_CarlosPerales.pdf'
 
 import {
     HeroContainer,
@@ -31,7 +32,7 @@ const HeroSection = () => {
                 <HeroDescription>
                     I'm a recently graduated Software Engineer.
                 </HeroDescription>
-                {/* <DownloadLink href="../../../public/CV_CarlosPerales.pdf" target="_blank" download="CV_CarlosPerales.pdf">Download my CV</DownloadLink> */}
+                <DownloadLink href={myPDF} target="_blank" type="application/pdf" download>Download CV</DownloadLink>
             </HeroContent>
         </HeroContainer>
     )

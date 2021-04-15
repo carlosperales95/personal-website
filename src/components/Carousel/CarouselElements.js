@@ -51,8 +51,8 @@ export const CarouselCard = styled.div`
 
 
 export const CarouselCardIcon = styled.img`
-    height: 160px;
-    width: 160px;
+    height: 150px;
+    width: 150px;
     margin-bottom: 10px;
 
 `

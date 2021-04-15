@@ -7,7 +7,7 @@ import FadeIn from '../AnimationComponents/FadeIn';
 
 import { 
    // ProjectsContainer, 
-    ProjectsHeader 
+    ProjectsHeader, Tech, TechWrapper 
 } from "../ProjectSection/ProjectSectionElements"
 
 import { 
@@ -26,6 +26,8 @@ import {
     ExperienceCarouselCard, 
     ExperienceCarouselDropdown, 
     ExperienceCarouselItem,
+    TechInfoContainer,
+    ToggleWrap,
     ExperienceCarouselPlaceholder,
     ImgBack
 } from './ExperienceSectionElements'
@@ -57,7 +59,7 @@ const ExperienceSection = () => {
         <ExperienceContainer id="experience">
             <TopLine>My exp over 9000</TopLine>
             <ProjectsHeader>My Experience</ProjectsHeader>
-            <Subtitle>Haven't had so many professional experienced so far, but I've been around.</Subtitle>
+            <Subtitle>I haven't had enough time for a lot professional experiences so far, but I've been around. Take a look at all my past jobs.</Subtitle>
             {/* <ExperienceCarouselPlaceholder>
                     <ImgBack src={imgBack} alt="cyborg"/>
             </ ExperienceCarouselPlaceholder> */}
@@ -68,19 +70,36 @@ const ExperienceSection = () => {
                                 <>
                                     <ExperienceCarouselItem onClick={() => toggle(index)} key={index}>
                                         <ExperienceCarouselCard>
-                                            <CarouselCardContent>{item.internship ? "Internship" : ""}</CarouselCardContent>
                                             <CarouselCardIcon src={item.icon}/>
+                                            <CarouselCardContent>{item.company}</CarouselCardContent>
                                             <CarouselCardHeader>{item.title}</CarouselCardHeader>
                                             <CarouselCardContent>{item.dateFrom} - {item.dateTo}</CarouselCardContent>
-                                            <CarouselCardContent>{item.description}</CarouselCardContent>
-                                            <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
+                                            <ToggleWrap>
+                                                <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
+                                            </ToggleWrap>
                                         </ExperienceCarouselCard>
                                         {clicked === index ? (
                                         <GrowDown>
                                             <ExperienceCarouselDropdown>
-                                                <h2>{item.internship ? "Internship" : ""}</h2>
-                                                <h3> ({item.dateFrom} - {item.dateTo})</h3>
+                                                <h2>{item.internship ? "Internship with" : ""} {item.company}</h2>
+                                                <h3>{item.title} ({item.dateFrom} - {item.dateTo})</h3>
                                                 <p>{item.description}</p>
+                                                <TechInfoContainer>
+                                                    <TechWrapper>
+                                                        {item.tech1 ? 
+                                                            <Tech> {item.tech1}</Tech> 
+                                                        : null}
+                                                        {item.tech2 ? 
+                                                            <Tech> {item.tech2}</Tech> 
+                                                        : null}
+                                                        {item.tech3 ? 
+                                                            <Tech> {item.tech3}</Tech> 
+                                                        : null}
+                                                        {item.tech4 ? 
+                                                            <Tech> {item.tech4}</Tech> 
+                                                        : null}
+                                                    </TechWrapper>
+                                                </TechInfoContainer>
                                             </ExperienceCarouselDropdown>
                                         </GrowDown>
                                         ): null}

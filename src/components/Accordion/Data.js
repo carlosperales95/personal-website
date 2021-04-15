@@ -8,8 +8,8 @@ import myImage6 from '../../images/uppsala-universitet.png'
 export const Data = [
     {
         title: "Universidad de Deusto",
-        studied: "Bachelors Computer Science",
-        content: "Hello yes I have been in Deusto effectivie wonder it was nice but there was the covid and then Im back now hello everybody nice to meet you.",
+        studied: "Bachelors Computer Engineering",
+        content: "Followed and completed the Computer Engineering Bachelors degree in the University of Deusto.",
         icon: myImage7,
         dateFrom: '2013',
         dateTo: '2017'
@@ -17,7 +17,7 @@ export const Data = [
     {
         title: "Uppsala Universitet",
         studied: "Erasmus Exchange",
-        content: "Hello yes I have been in Uppsala effectivie wonder it was nice but there was the covid and then Im back now hello everybody nice to meet you.",
+        content: "Spent a semester in Uppsala, Sweden. During this period, I followed Computer Science related courses in Uppsala University, the 8th oldest university in Europe.",
         icon: myImage6,
         dateFrom: '2016',
         dateTo: '2017'
@@ -25,7 +25,7 @@ export const Data = [
     {
         title: "Vrije Universiteit Amsterdam",
         studied: "Msc Software Engineering + Green IT",
-        content: "Hello yes I have been in VU effectivie wonder it was nice but there was the covid and then Im back now hello everybody nice to meet you.",
+        content: "Completed the Computer Science Masters degree, following the track of Software Engineering + Green IT. ",
         icon: myImage9,
         dateFrom: '2017',
         dateTo: 'Now'
@@ -33,7 +33,7 @@ export const Data = [
     {
         title: "Universita di Bologna",
         studied: "Erasmus Exchange",
-        content: "Hello yes I have been in Bologna effectiviewonder it was nice but there was the covid and then Im back now hello everybody nice to meet you.",
+        content: "Spent a full academic year in Bologna, Italy. I attended classes in the University of Bologna, considered the oldest and one of the most prestigious universities in Europe.",
         icon: myImage8,
         dateFrom: '2019',
         dateTo: '2020'

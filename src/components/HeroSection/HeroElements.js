@@ -94,7 +94,7 @@ export const HeroDescription = styled.p`
 
 `
 
-export const DownloadLink = styled(LinkR)`
+export const DownloadLink = styled.a`
     border-radius: 50px;
     background: #01BF71;
     white-space: nowrap;

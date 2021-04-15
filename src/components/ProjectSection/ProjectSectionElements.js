@@ -68,6 +68,7 @@ export const Tech = styled.p`
     margin-right: 10px;
     border-color: #01BF71;
     border: 1px, solid;
+    color: #01BF71;
 
 
 `

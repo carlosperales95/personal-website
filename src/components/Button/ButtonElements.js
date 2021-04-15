@@ -16,9 +16,11 @@ export const Button = styled(LinkR)`
     align-items: center;
     transition: all 0.2s ease-in-out;
     text-decoration: none;
+    font-weight: 700;
 
     &:hover {
         transition: all 0.2s ease-in-out;
         background: ${({primary}) => (primary ? '#fff' : '#01BF71')};
+        color: #010606;
     }
 `

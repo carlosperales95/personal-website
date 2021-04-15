@@ -7,9 +7,9 @@ export const EducationImagedWrapper = styled.div`
     padding-top: 0 !important;
     display: grid;
     z-index: 1;
-    height: 1000px;
+    height: 1160px;
     width: 100%;
-    max-width: 1100px;
+    max-width: 1150px;
     margin-right: auto;
     margin-left: auto;
     padding: 0 24px;
@@ -73,7 +73,6 @@ export const EducationSubtitle = styled.p`
     line-height: 24px;
     color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
 `
-
 
 
 //
