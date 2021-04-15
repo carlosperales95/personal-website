@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/personal-website/static/css/main.64b24a9c.chunk.css",
-    "main.js": "/personal-website/static/js/main.916acd5b.chunk.js",
-    "main.js.map": "/personal-website/static/js/main.916acd5b.chunk.js.map",
+    "main.js": "/personal-website/static/js/main.f6b77793.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.f6b77793.chunk.js.map",
     "runtime-main.js": "/personal-website/static/js/runtime-main.3bf14499.js",
     "runtime-main.js.map": "/personal-website/static/js/runtime-main.3bf14499.js.map",
     "static/js/2.0e893d27.chunk.js": "/personal-website/static/js/2.0e893d27.chunk.js",
@@ -10,13 +10,15 @@
     "index.html": "/personal-website/index.html",
     "static/css/main.64b24a9c.chunk.css.map": "/personal-website/static/css/main.64b24a9c.chunk.css.map",
     "static/js/2.0e893d27.chunk.js.LICENSE.txt": "/personal-website/static/js/2.0e893d27.chunk.js.LICENSE.txt",
+    "static/media/CV_CarlosPerales.ed57365d.pdf": "/personal-website/static/media/CV_CarlosPerales.ed57365d.pdf",
     "static/media/alma-mater.f6c64dd8.png": "/personal-website/static/media/alma-mater.f6c64dd8.png",
     "static/media/artist.55a804b0.svg": "/personal-website/static/media/artist.55a804b0.svg",
-    "static/media/beer_celebration.533bf14a.svg": "/personal-website/static/media/beer_celebration.533bf14a.svg",
+    "static/media/contact_me.24b06cd0.svg": "/personal-website/static/media/contact_me.24b06cd0.svg",
     "static/media/cyborg-unsubscribed.6b441458.png": "/personal-website/static/media/cyborg-unsubscribed.6b441458.png",
     "static/media/data_surround.12451c54.svg": "/personal-website/static/media/data_surround.12451c54.svg",
     "static/media/discovery.2e7aef20.svg": "/personal-website/static/media/discovery.2e7aef20.svg",
     "static/media/hack_code.cd584f5a.mp4": "/personal-website/static/media/hack_code.cd584f5a.mp4",
+    "static/media/luggo_logo.d80233dd.svg": "/personal-website/static/media/luggo_logo.d80233dd.svg",
     "static/media/mic_drop.ca7310be.svg": "/personal-website/static/media/mic_drop.ca7310be.svg",
     "static/media/mountain.fd435ba6.svg": "/personal-website/static/media/mountain.fd435ba6.svg",
     "static/media/plant.3811e658.svg": "/personal-website/static/media/plant.3811e658.svg",
@@ -30,6 +32,6 @@
     "static/js/runtime-main.3bf14499.js",
     "static/js/2.0e893d27.chunk.js",
     "static/css/main.64b24a9c.chunk.css",
-    "static/js/main.916acd5b.chunk.js"
+    "static/js/main.f6b77793.chunk.js"
   ]
 }
