@@ -13,13 +13,24 @@ export const ExperienceContainer = styled.div`
     align-items: center;
     text-align: center;
 
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        height: 1300px;
+    }
+
     @media screen and (max-width: 480px) {
         height: 1350px;
     }
 `
 
+
 export const ExperienceCarousel = styled(Carousel)`
+    .rec-carousel {
+        height: 725px !important;
+
+    }
     .rec-arrow-right, .rec-arrow-left{
+        margin-bottom: 350px;
 
         &:hover, &:focus {
             background-color: #01BF71;
@@ -42,7 +53,31 @@ export const ExperienceCarousel = styled(Carousel)`
 
     }
 
+    @media screen and (max-width: 768px) {
+        .rec-arrow-right, .rec-arrow-left{
+            margin-bottom: 500px;
+        }
+        .rec-carousel {
+            height: 800px !important;
+    
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        height: 1400px;
+        .rec-carousel {
+            padding-bottom: 0px;
+            height: 850px !important;
+        }
+        .rec-item-wrapper {
+            padding-bottom: 5px;
+            margin-bottom: 5px;
+    
+        }
+    }
+
 `
+
 
 export const ExperienceCarouselCard = styled.div`
     background: #fff;
@@ -120,10 +155,22 @@ export const ExperienceCarouselDropdown = styled.div`
         font-size: 1rem;
     }
 
+    @media screen and (max-width: 768px) {
+        height: 100%;
+        max-height: 550px;
+        h2 {
+            display: none;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
 
     @media screen and (max-width: 480px) {
+        margin-bottom: 50px;
+        padding-bottom: 5px;
         height: 100%;
-        max-height: 521px;
+        max-height: 530px;
         h2 {
             display: none;
         }
@@ -133,6 +180,8 @@ export const ExperienceCarouselDropdown = styled.div`
         }
     }
 `
+
+
 export const ExperienceCarouselPlaceholder = styled.div`
     border-radius: 10px;
     background: transparent;
@@ -153,6 +202,7 @@ export const ExperienceCarouselPlaceholder = styled.div`
 
 `
 
+
 export const ExperienceCarouselItem = styled.div`
 
     display: flex;
@@ -167,6 +217,7 @@ export const ExperienceCarouselItem = styled.div`
     font-size: 4em;
     padding: 20px;
 `
+
 
 export const ImgBack = styled.img`
     width: 100%;
@@ -187,6 +238,7 @@ export const TechInfoContainer = styled.div`
     margin-top: 10px;
     display: flex;
 `
+
 
 export const ToggleWrap = styled.div`
     margin-top: 10px;

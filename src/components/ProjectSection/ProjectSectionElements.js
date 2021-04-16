@@ -1,5 +1,6 @@
 import styled from'styled-components'
-import Carousel from "react-elastic-carousel";
+import Carousel from "react-elastic-carousel"
+import { css } from 'styled-components'
 
 
 
@@ -11,7 +12,7 @@ export const ProjectsContainer = styled.div`
     justify-content: center;
     align-items: center;
     background: #010606;
-    padding-top: 100px;
+    padding-top: 400px;
 
     @media screen and (max-width: 480px) {
         height: 1300px;
@@ -20,25 +21,73 @@ export const ProjectsContainer = styled.div`
 
 
 export const ProjectsCard = styled.div`
-    background: #fff;
+   
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
     height: 340px;
+    max-width: 300px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
 
-    &:hover {
-        transform: scale(1.02);
-        transition: all 0.2s ease-in-out;
-        cursor: pointer;
+
+    &.flipped {
+        & > div:first-of-type { // frontside of the card
+          transform: perspective(1000px) rotateY(-180deg);
+        }
+    
+        & > div:last-of-type { // backside of the card
+          trans
+        }
     }
 `
 
+    // Card sides
+    export const CardSide = css`
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 10px;
+        height: 340px;
+        padding: 30px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        transition: all 0.2s ease-in-out;
+        width: 100%;
+        // height: 100%;
+        backface-visibility: hidden;
+        // transition: all .25s ease-in-out;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: all 0.2s ease-in-out;
+            cursor: pointer;
+        }
+    `
+
+    // Card side - front
+    export const CardFront = styled.div`
+        ${CardSide};
+
+        font-weight: bold;
+        text-align: center;
+    `
+
+    // Card side - back
+    export const CardBack = styled.div`
+        ${CardSide};
+
+        transform: rotateY(-180deg);
+    `
+
+
+
 export const ProjectCarousel = styled(Carousel)`
+
     .rec-arrow-right, .rec-arrow-left{
 
         &:hover, &:focus {
@@ -49,6 +98,10 @@ export const ProjectCarousel = styled(Carousel)`
                 background-color: transparent;
             }
         }
+    }
+
+    .rec-pagination {
+        margin-bottom: 1000px !important;
     }
 
     .rec-dot {
@@ -115,7 +168,7 @@ export const ProjectCarouselCard = styled.div`
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
-        cursor: pointer;
+        // cursor: pointer;
     }
 `
 
@@ -160,5 +213,19 @@ export const ProjectsWrapper = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-columns: 1fr;
     }
+
+`
+
+export const ProjectCarouselCardHeader = styled.a`
+font-size: 1.2rem;
+font-weight: 700;
+margin-bottom: 10px;
+text-decoration: none;
+color: #01BF71;
+
+&:hover {
+    cursor: pointer;
+    color: #7BF99B;
+}
 
 `

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Data } from './Data'
 import Carousel from "react-elastic-carousel";
 
@@ -16,7 +16,11 @@ import {
     ProjectsHeader, 
     TechWrapper,
     Tech,
-    ProjectCarousel
+    ProjectCarousel,
+    ProjectCarouselCardHeader,
+    CardSide,
+    CardFront,
+    CardBack
 } from './ProjectSectionElements'
 
 import { TopLine } from "../ImagedSection/ImagedSectionElements"
@@ -32,6 +36,15 @@ const breakPoints = [
   
 
 const ProjectSection = () => {
+    // const [flipped, setFlipped] = useState(false)
+
+    // const toggle = index => {
+    //     if(flipped == index) {
+    //         return setFlipped(null)
+    //     }
+
+    //     setFlipped(index)
+    // }
 
 
     return (
@@ -44,15 +57,21 @@ const ProjectSection = () => {
                             return (
                                 <>
                                     <CarouselItem>
-                                        <ProjectCarouselCard>
+                                        {/* <ProjectCarouselCard onClick={() => toggle(index)} key={index}> */}
+                                        <ProjectCarouselCard>    
+                                            {/* <CardFront> */}
                                             <CarouselCardIcon src={item.icon}/>
-                                            <CarouselCardHeader>{item.title}</CarouselCardHeader>
+                                            <ProjectCarouselCardHeader href={item.repo}>{item.title}</ProjectCarouselCardHeader>
                                             <CarouselCardContent>{item.content}</CarouselCardContent>
                                             <TechWrapper>
                                                 {item.tech1 ? <Tech>{item.tech1}</Tech> : null}
                                                 {item.tech2 ? <Tech>{item.tech2}</Tech> : null}
                                                 {item.tech3 ? <Tech>{item.tech3}</Tech> : null}
                                             </TechWrapper>
+                                            {/* </CardFront> */}
+                                            {/* <CardBack>
+                                                <h1>HALLO</h1>
+                                            </CardBack> */}
                                         </ProjectCarouselCard>
                                     </CarouselItem>
                                 </>

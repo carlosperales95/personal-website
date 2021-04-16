@@ -27,7 +27,8 @@ const Contact = () => {
                     <FormContent>
                         <Form action="mailto:carlos.perales95@opendeusto.es"
                         method="get"
-                        enctype="multipart/form-data"
+                        enctype="text/plain"
+                        onsubmit="location.href='/personal-website';"
                         name="EmailForm">
                             <FormHeader>Send me an email !</FormHeader>
                             <FormLabel htmlFor='for'>email</FormLabel>
