@@ -52,7 +52,7 @@ export const homeObjThree = {
     topLine: 'It takes time to grow',
     headline: 'Unlimited Power and Creativity',
     description: 
-    'As you can see, most of my experience happened in the shap of internships that I carried out during my studies. I still got a lot to learn, and I\'m eager to learn! I\'m not looking for any job, but for a place where I can grow as a programmer. Every mind, just like any plant, needs the right setting in order to prosper and grow. Even if the plant gives its all, it will die in its early stages if it\'s not taken care of. I\'m that plant right now, and I want to become a tree one day!',
+    'As you can see, most of my experience happened in the shape of internships that I carried out during my studies. I still got a lot to learn, and I\'m eager to learn! I\'m not looking for any job, but for a place where I can grow as a programmer. Every mind, just like any plant, needs the right setting in order to prosper and grow. Even if the plant gives its all, it will die in its early stages if it\'s not taken care of. I\'m that plant right now, and I want to become a tree one day!',
     buttonLabel: 'Hire me',
     imgStart: false,
     img: myImage6,
