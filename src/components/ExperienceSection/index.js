@@ -7,7 +7,7 @@ import FadeIn from '../AnimationComponents/FadeIn';
 
 import { 
    // ProjectsContainer, 
-    ProjectsHeader, Tech, TechWrapper 
+   ProjectsHeading, Tech, TechWrapper 
 } from "../ProjectSection/ProjectSectionElements"
 
 import { 
@@ -15,9 +15,7 @@ import {
  } from "../ImagedSection/ImagedSectionElements"
 
 import { 
-    CarouselCardContent, 
-    CarouselCardIcon, 
-    CarouselCardHeader, 
+    CarouselCardContent,
     CarouselWrapper
 } from "../Carousel/CarouselElements";
 
@@ -30,14 +28,11 @@ import {
     ToggleWrap,
     ExperienceCarousel,
     ExperienceCardIcon,
-    ExperienceCardHeader,
-    ExperienceCarouselPlaceholder,
-    ImgBack
+    ExperienceCardHeader
 } from './ExperienceSectionElements'
 
-import { ImgWrap, TopLine } from "../ImagedSection/ImagedSectionElements"
+import { TopLine } from "../ImagedSection/ImagedSectionElements"
 import { FaAngleDown, FaAngleUp } from 'react-icons/fa'
-import imgBack from '../../images/cyborg-unsubscribed.png'
 
 
 
@@ -61,7 +56,7 @@ const ExperienceSection = () => {
     return (
         <ExperienceContainer id="experience">
             <TopLine>My exp over 9000</TopLine>
-            <ProjectsHeader>My Experience</ProjectsHeader>
+            <ProjectsHeading>My Experience</ProjectsHeading>
             <Subtitle>I haven't had enough time for a lot professional experiences so far, but I've been around. Take a look at all my past jobs.</Subtitle>
             {/* <ExperienceCarouselPlaceholder>
                     <ImgBack src={imgBack} alt="cyborg"/>

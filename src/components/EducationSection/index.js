@@ -16,8 +16,8 @@ import {
     EducationSubtitle,
     EducationColumn1,
     EducationColumn2,
-    EducationImagedWrapper,
-    EducationImagedRow
+    EducationWrapper,
+    EducationRow
 
 } from './EducationSectionElements'
 
@@ -39,8 +39,8 @@ const EducationSection = ({
     return (
             <>
                 <ImagedContainer lightBg={lightBg} id={id}>
-                    <EducationImagedWrapper>
-                        <EducationImagedRow imgStart={imgStart}>
+                    <EducationWrapper>
+                        <EducationRow imgStart={imgStart}>
                             <EducationColumn1>
                                 <EducationTextWrapper>
                                     <TopLine>{topLine}</TopLine>
@@ -54,8 +54,8 @@ const EducationSection = ({
                                     <Img src={img} alt={alt}/>
                                 </ImgWrap>
                             </EducationColumn2>
-                        </EducationImagedRow>
-                    </EducationImagedWrapper>
+                        </EducationRow>
+                    </EducationWrapper>
                 </ImagedContainer>
             </>
     )

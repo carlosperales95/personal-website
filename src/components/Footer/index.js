@@ -21,7 +21,7 @@ const Footer = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle> Other stuff</FooterLinkTitle>
+                            <FooterLinkTitle>Link Section 1</FooterLinkTitle>
                             <FooterLink to="/personal-website/contact">Link1</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk2</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk3</FooterLink>
@@ -29,7 +29,7 @@ const Footer = () => {
                             <FooterLink to="/personal-website/contact">Link5</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle> Other stuff 2</FooterLinkTitle>
+                            <FooterLinkTitle>Link Section 2</FooterLinkTitle>
                             <FooterLink to="/personal-website/contact">Link1</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk2</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk3</FooterLink>
@@ -39,7 +39,7 @@ const Footer = () => {
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle> Other stuff 3</FooterLinkTitle>
+                            <FooterLinkTitle>Link Section 3</FooterLinkTitle>
                             <FooterLink to="/personal-website/contact">Link1</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk2</FooterLink>
                             <FooterLink to="/personal-website/contact">LInk3</FooterLink>
@@ -47,7 +47,7 @@ const Footer = () => {
                             <FooterLink to="/personal-website/contact">Link5</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle> Other stuff 4</FooterLinkTitle>
+                            <FooterLinkTitle>Link Section 4</FooterLinkTitle>
                             <FooterExternalLink href="https://github.com/carlosperales95">Ghub</FooterExternalLink>
                             <FooterExternalLink href="https://www.mixcloud.com/perlballota/">Mixcloud</FooterExternalLink>
                             <FooterExternalLink href="https://www.instagram.com/cp.raw/">Insta</FooterExternalLink>

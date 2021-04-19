@@ -1,5 +1,7 @@
 import React from 'react'
+
 import { Button } from '../Button/ButtonElements'
+
 import { 
     ImagedContainer,
     ImagedWrapper,
@@ -14,6 +16,7 @@ import {
     ImgWrap, 
     Img, 
 } from './ImagedSectionElements'
+
 
 
 const ImagedSection = ({

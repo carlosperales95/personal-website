@@ -1,10 +1,12 @@
 import styled from'styled-components'
 import Carousel from "react-elastic-carousel"
 import { css } from 'styled-components'
-import {CarouselCardContent} from '../Carousel/CarouselElements'
+
+import { CarouselCardContent }  from '../Carousel/CarouselElements'
+import { Heading } from '../ImagedSection/ImagedSectionElements'
 
 
-
+// ==ExperienceSection (Join in shared element and extend)
 export const ProjectsContainer = styled.div`
     height: 800px;
     display: flex;
@@ -20,72 +22,17 @@ export const ProjectsContainer = styled.div`
 `
 
 
-export const ProjectsCard = styled.div`
-   
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    border-radius: 10px;
-    height: 340px;
-    max-width: 300px;
-    padding: 30px;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-    transition: all 0.2s ease-in-out;
+export const ProjectsHeading = styled(Heading)`
+    color: #fff;
+    margin-bottom: 64px;
 
-
-    &.flipped {
-        & > div:first-of-type { // frontside of the card
-          transform: perspective(1000px) rotateY(-180deg);
-        }
-    
-        & > div:last-of-type { // backside of the card
-          trans
-        }
+    @media screen and (max-width: 480px) {
+        font-size: 2rem;
     }
+
 `
 
-    // Card sides
-    export const CardSide = css`
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        border-radius: 10px;
-        height: 340px;
-        padding: 30px;
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
-        transition: all 0.2s ease-in-out;
-        width: 100%;
-        // height: 100%;
-        backface-visibility: hidden;
-        // transition: all .25s ease-in-out;
-
-        &:hover {
-            transform: scale(1.02);
-            transition: all 0.2s ease-in-out;
-            cursor: pointer;
-        }
-    `
-
-    // Card side - front
-    export const CardFront = styled.div`
-        ${CardSide};
-
-        font-weight: bold;
-        text-align: center;
-    `
-
-    // Card side - back
-    export const CardBack = styled.div`
-        ${CardSide};
-
-        transform: rotateY(-180deg);
-    `
-
-
-
+// ==Similar to ExperienceSection (Join in shared element and extend)
 export const ProjectCarousel = styled(Carousel)`
 
     .rec-arrow-right, .rec-arrow-left{
@@ -116,15 +63,44 @@ export const ProjectCarousel = styled(Carousel)`
 `
 
 
-export const ProjectsHeader = styled.h1`
-    font-size: 48px;
-    color: #fff;
-    margin-bottom: 64px;
+export const ProjectCarouselCard = styled.div`
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    height: 360px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
 
-    @media screen and (max-width: 480px) {
-        font-size: 2rem;
+    &:hover {
+        transform: scale(1.02);
+        transition: all 0.2s ease-in-out;
+    }
+`
+
+
+export const ProjectCarouselCardHeader = styled.a`
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #01BF71;
+
+    &:hover {
+        cursor: pointer;
+        color: #7BF99B;
     }
 
+`
+
+
+export const ProjectCardContent = styled(CarouselCardContent)`
+    min-height: 80px;
+    height: 100%;
 `
 
 
@@ -153,86 +129,68 @@ export const Tech = styled.p`
 `
 
 
-export const ProjectCarouselCard = styled.div`
+
+// Card sides - WIP
+export const ProjectsCard = styled.div`
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 10px;
+    height: 340px;
+    max-width: 300px;
+    padding: 30px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+
+
+    &.flipped {
+        & > div:first-of-type { // frontside of the card
+          transform: perspective(1000px) rotateY(-180deg);
+        }
+    
+        & > div:last-of-type { // backside of the card
+          trans
+        }
+    }
+`
+
+// Card sides - WIP
+export const CardSide = css`
     background: #fff;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 360px;
+    height: 340px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
     transition: all 0.2s ease-in-out;
+    width: 100%;
+    // height: 100%;
+    backface-visibility: hidden;
+    // transition: all .25s ease-in-out;
 
     &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
-        // cursor: pointer;
+        cursor: pointer;
     }
 `
 
+// Card side - front - WIP
+export const CardFront = styled.div`
+    ${CardSide};
 
-
-
-export const ProjectsIcon = styled.img`
-    height: 160px;
-    width: 160px;
-    margin-bottom: 10px;
-
-`
-
-
-export const ProjectsSubHeader = styled.h2`
-    font-size: 1rem;
-    margin-bottom: 10px;
-
-`
-
-
-export const ProjectsDesc = styled.p`
-    font-size: 1rem;
+    font-weight: bold;
     text-align: center;
-
-
 `
 
+// Card side - back - WIP
+export const CardBack = styled.div`
+    ${CardSide};
 
-export const ProjectsWrapper = styled.div`
-    max-width: 1000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    grid-gap: 16px;
-    padding: 0 50px;
-
-    @media screen and (max-width: 1000px) {
-        grid-template-columns: 1fr 1r;
-    }
-
-    @media screen and (max-width: 768px) {
-        grid-template-columns: 1fr;
-    }
-
-`
-
-export const ProjectCarouselCardHeader = styled.a`
-font-size: 1.2rem;
-font-weight: 700;
-margin-bottom: 10px;
-margin-top: 10px;
-text-decoration: none;
-color: #01BF71;
-
-&:hover {
-    cursor: pointer;
-    color: #7BF99B;
-}
-
-`
-
-export const ProjectCardContent = styled(CarouselCardContent)`
-    min-height: 80px;
-    height: 100%;
+    transform: rotateY(-180deg);
 `

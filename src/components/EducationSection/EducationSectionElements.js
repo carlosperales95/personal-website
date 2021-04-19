@@ -1,18 +1,14 @@
 import styled from'styled-components'
 
+import { ImagedWrapper, Subtitle, TextWrapper } from '../ImagedSection/ImagedSectionElements'
 
 
-export const EducationImagedWrapper = styled.div`
+
+export const EducationWrapper = styled(ImagedWrapper)`
     margin-top: 0 !important;
     padding-top: 0 !important;
-    display: grid;
-    z-index: 1;
     height: 1160px;
-    width: 100%;
     max-width: 1150px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
     justify-content: top;
 
     @media screen and (max-width: 768px) {
@@ -22,7 +18,7 @@ export const EducationImagedWrapper = styled.div`
 `
 
 
-export const EducationImagedRow = styled.div`
+export const EducationRow = styled.div`
     display: grid;
     grid-auto-columns: minmax(auto, 1fr);
     align-items: top;
@@ -32,14 +28,6 @@ export const EducationImagedRow = styled.div`
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`)};
     }
-`
-
-
-export const EducationTextWrapper = styled.div`
-    max-width: 100%;
-    padding-top: 0;
-    padding-bottom: 60px;
-    justify-content: center;
 `
 
 
@@ -66,65 +54,14 @@ export const EducationColumn2 = styled.div`
 `
 
 
-export const EducationSubtitle = styled.p`
+export const EducationTextWrapper = styled(TextWrapper)`
+    max-width: 100%;
+    justify-content: center;
+`
+
+
+export const EducationSubtitle = styled(Subtitle)`
     max-width: 80%;
-    margin-bottom: 35px;
-    font-size: 18px;
-    line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
-`
-
-
-//
-
-
-
-export const MilestoneHeader = styled.div`
-    padding-top: 65px;
-    font-size: 20px;
-    padding-bottom: 2px;
-    color: #010606;
-`
-
-
-export const MilestoneImgWrap = styled.div`
-    max-width: 130px;
-    height: 10%;
-`
-
-
-export const MilestoneImg = styled.img`
-    width: 80%;
-    margin: 20px 10px 0;
-    padding-right: 0;
-`
-
-
-export const MilestoneCard = styled.div`
-    display: grid;
-    grid-auto-columns: minmax(auto, 0.4fr);
-    align-items: left;
-    grid-template-areas: 'col2 col1';
 
 `
 
-
-export const MilestonesContainer = styled.div`
-    color: #fff;
-    background: '#f9f9f9';
-
-`
-
-
-export const MilestonesWrapper = styled.div`
-    display: grid;
-    z-index: 1;
-    height: 30px;
-    width: 100%;
-    margin-right: 0;
-    margin-left: 0;
-    padding-left: 0;
-    padding-top: 10px;
-    justify-content: left;
-
-`

@@ -1,30 +1,26 @@
-import React, {useState} from 'react'
+import React from 'react'
+
 import { Data } from './Data'
-import Carousel from "react-elastic-carousel";
+
+import { TopLine } from "../ImagedSection/ImagedSectionElements"
 
 import { 
     CarouselItem,  
-    CarouselCardContent, 
     CarouselCardIcon, 
-    CarouselCardHeader, 
     CarouselWrapper
 } from "../Carousel/CarouselElements";
 
 import {
     ProjectsContainer, 
     ProjectCarouselCard,
-    ProjectsHeader, 
+    ProjectsHeading, 
     TechWrapper,
     Tech,
     ProjectCarousel,
     ProjectCarouselCardHeader,
-    ProjectCardContent,
-    CardSide,
-    CardFront,
-    CardBack
+    ProjectCardContent
 } from './ProjectSectionElements'
 
-import { TopLine } from "../ImagedSection/ImagedSectionElements"
 
 
 
@@ -51,7 +47,7 @@ const ProjectSection = () => {
     return (
         <ProjectsContainer id="projects">
                 <TopLine>My unicorn companies</TopLine>
-                <ProjectsHeader>My projects</ProjectsHeader>
+                <ProjectsHeading>My projects</ProjectsHeading>
                 <CarouselWrapper>
                 <ProjectCarousel breakPoints={breakPoints}>
                     {Data.map((item, index) => {

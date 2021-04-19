@@ -83,9 +83,6 @@ export const Dropdown = styled.div`
     border-color: #01BF71;
 
 
-    // border-bottom: 1px solid #00ffb9;
-    // border-top: 1px solid #00ffb9;
-
     h2 {
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
@@ -101,6 +98,7 @@ export const Dropdown = styled.div`
     }
 
 `
+
 
 export const IconWrap = styled.div`
     margin-right: 0px;
