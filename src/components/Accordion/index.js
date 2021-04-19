@@ -22,7 +22,7 @@ const Accordion = () => {
 
     const toggle = index => {
 
-        if(clicked == index) {
+        if(clicked === index) {
             return setClicked(null)
         }
 
@@ -44,7 +44,7 @@ const Accordion = () => {
                                         <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>
                                     </IconWrap>
                                     <h1>{item.title}</h1>
-                                    <img src={item.icon}/>
+                                    <img src={item.icon} alt="icon"/>
                                 </Wrap>
                                 {clicked === index ? (
                                    <GrowDown>

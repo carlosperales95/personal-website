@@ -16,7 +16,7 @@ export const homeObjOne = {
     topLine: 'About Me',
     headline: 'Made in Spain, based in Amsterdam',
     description: 
-    'I come from Bilbao, a city between mountains in northern Spain. When got the opportunity to go on my first Erasmus, I started thinking about moving out of my country. This mentality brought me to Sweden for 6 months, to Italy for 1 year and to Amsterdam for already 2+ years.',
+    'I come from Bilbao, a city between mountains in northern Spain. When got the opportunity to go on my first Erasmus, I started thinking about moving out of my country. I\'m currently 25 years old, and this mentality has led me to Sweden for 6 months, to Italy for 1 year and to Amsterdam for already 2+ years.',
     buttonLabel: 'Hire me',
     imgStart: false,
     img: myImage5,

@@ -18,6 +18,7 @@ import {
     Tech,
     ProjectCarousel,
     ProjectCarouselCardHeader,
+    ProjectCardContent,
     CardSide,
     CardFront,
     CardBack
@@ -62,7 +63,7 @@ const ProjectSection = () => {
                                             {/* <CardFront> */}
                                             <CarouselCardIcon src={item.icon}/>
                                             <ProjectCarouselCardHeader href={item.repo}>{item.title}</ProjectCarouselCardHeader>
-                                            <CarouselCardContent>{item.content}</CarouselCardContent>
+                                            <ProjectCardContent>{item.content}</ProjectCardContent>
                                             <TechWrapper>
                                                 {item.tech1 ? <Tech>{item.tech1}</Tech> : null}
                                                 {item.tech2 ? <Tech>{item.tech2}</Tech> : null}

@@ -29,6 +29,8 @@ import {
     TechInfoContainer,
     ToggleWrap,
     ExperienceCarousel,
+    ExperienceCardIcon,
+    ExperienceCardHeader,
     ExperienceCarouselPlaceholder,
     ImgBack
 } from './ExperienceSectionElements'
@@ -49,7 +51,7 @@ const ExperienceSection = () => {
     const [clicked, setClicked] = useState(false)
 
     const toggle = index => {
-        if(clicked == index) {
+        if(clicked === index) {
             return setClicked(null)
         }
 
@@ -71,9 +73,9 @@ const ExperienceSection = () => {
                                 <>
                                     <ExperienceCarouselItem onClick={() => toggle(index)} key={index}>
                                         <ExperienceCarouselCard>
-                                            <CarouselCardIcon src={item.icon}/>
+                                            <ExperienceCardIcon src={item.icon}/>
                                             <CarouselCardContent>{item.company}</CarouselCardContent>
-                                            <CarouselCardHeader>{item.title}</CarouselCardHeader>
+                                            <ExperienceCardHeader>{item.title}</ExperienceCardHeader>
                                             <CarouselCardContent>{item.dateFrom} - {item.dateTo}</CarouselCardContent>
                                             <ToggleWrap>
                                                 <span>{clicked === index ? <FaAngleUp /> : <FaAngleDown/>}</span>

@@ -1,7 +1,7 @@
 import styled from'styled-components'
 import Carousel from "react-elastic-carousel"
 import { css } from 'styled-components'
-
+import {CarouselCardContent} from '../Carousel/CarouselElements'
 
 
 
@@ -134,7 +134,7 @@ export const TechWrapper = styled.div`
     justify-content: center;
     text-align: center;
     max-height: 80px;
-    margin-top: 10px;
+    margin-top: 0;
 
 `
 
@@ -194,6 +194,7 @@ export const ProjectsDesc = styled.p`
     font-size: 1rem;
     text-align: center;
 
+
 `
 
 
@@ -220,6 +221,7 @@ export const ProjectCarouselCardHeader = styled.a`
 font-size: 1.2rem;
 font-weight: 700;
 margin-bottom: 10px;
+margin-top: 10px;
 text-decoration: none;
 color: #01BF71;
 
@@ -228,4 +230,9 @@ color: #01BF71;
     color: #7BF99B;
 }
 
+`
+
+export const ProjectCardContent = styled(CarouselCardContent)`
+    min-height: 80px;
+    height: 100%;
 `

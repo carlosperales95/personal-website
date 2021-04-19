@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { CarouselCardContent, CarouselCardHeader } from '../Carousel/CarouselElements'
+import { CarouselCardContent, CarouselCardHeader, CarouselCardIcon } from '../Carousel/CarouselElements'
 import Carousel from "react-elastic-carousel";
 
 
@@ -87,7 +87,7 @@ export const ExperienceCarouselCard = styled.div`
     justify-content: flex-start;
     align-items: center;
     border-radius: 10px;
-    height: 340px;
+    height: 360px;
     width: 100%;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
@@ -245,3 +245,11 @@ export const ToggleWrap = styled.div`
     margin-bottom: 0 !important;
 
 `
+
+export const ExperienceCardIcon = styled(CarouselCardIcon)`
+    max-height: 150px;
+`
+export const ExperienceCardHeader = styled(CarouselCardHeader)`
+    font-size: 1.3rem;
+`
+
