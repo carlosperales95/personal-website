@@ -28,23 +28,23 @@ const Footer = () => {
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Media banks</FooterLinkTitle>
-                            <FooterLink href="https://www.pexels.com/">Pexels</FooterLink>
-                            <FooterLink href="https://www.manypixels.co/gallery">Manypixels</FooterLink>
-                            <FooterLink href="https://absurd.design/">Absurd Design</FooterLink>
-                            <FooterLink href="https://www.drawkit.io/#browse-now-button">Drawkit</FooterLink>
-                            <FooterLink href="https://iradesign.io/">IRA Design</FooterLink>
-                            <FooterLink href="https://undraw.co/illustrations">Undraw</FooterLink>
-                            <FooterLink href="https://icons8.com/illustrations">Ouch</FooterLink>
+                            <FooterExternalLink href="https://www.pexels.com">Pexels</FooterExternalLink>
+                            <FooterExternalLink href="https://www.manypixels.co/gallery">Manypixels</FooterExternalLink>
+                            <FooterExternalLink href="https://absurd.design/">Absurd Design</FooterExternalLink>
+                            <FooterExternalLink href="https://www.drawkit.io/#browse-now-button">Drawkit</FooterExternalLink>
+                            <FooterExternalLink href="https://iradesign.io/">IRA Design</FooterExternalLink>
+                            <FooterExternalLink href="https://undraw.co/illustrations">Undraw</FooterExternalLink>
+                            <FooterExternalLink href="https://icons8.com/illustrations">Ouch</FooterExternalLink>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                     <FooterLinkItems>
                             <FooterLinkTitle>Universities</FooterLinkTitle>
-                            <FooterLink href="https://www.deusto.es/cs/Satellite/deusto/en/university-deusto?cambioidioma=si">University of Deusto</FooterLink>
-                            <FooterLink href="https://www.uu.se/en/">University of Uppsala</FooterLink>
-                            <FooterLink href="https://www.vu.nl/en/">VU Amsterdam</FooterLink>
-                            <FooterLink href="https://www.uva.nl/en">University of Amsterdam</FooterLink>
-                            <FooterLink href="https://www.unibo.it/en/homepage">University of Bologna</FooterLink>
+                            <FooterExternalLink href="https://www.deusto.es/cs/Satellite/deusto/en/university-deusto?cambioidioma=si">University of Deusto</FooterExternalLink>
+                            <FooterExternalLink href="https://www.uu.se/en/">University of Uppsala</FooterExternalLink>
+                            <FooterExternalLink href="https://www.vu.nl/en/">VU Amsterdam</FooterExternalLink>
+                            <FooterExternalLink href="https://www.uva.nl/en">University of Amsterdam</FooterExternalLink>
+                            <FooterExternalLink href="https://www.unibo.it/en/homepage">University of Bologna</FooterExternalLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
                             <FooterLinkTitle>Where to find me</FooterLinkTitle>
